@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carkeysleeds.co.uk/sitemap.xml

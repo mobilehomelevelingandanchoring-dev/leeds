@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply antialiased text-slate-800 bg-white;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold leading-tight;
+  }
+}
+
+@layer components {
+  .btn-emergency {
+    @apply inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 active:bg-red-800
+           text-white font-bold px-6 py-3 rounded-lg transition-all duration-200
+           shadow-lg hover:shadow-xl hover:-translate-y-0.5 transform;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 active:bg-amber-600
+           text-slate-900 font-bold px-6 py-3 rounded-lg transition-all duration-200
+           shadow-md hover:shadow-lg;
+  }
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white
+           hover:text-brand-navy font-bold px-6 py-3 rounded-lg transition-all duration-200;
+  }
+  .section-pad {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6;
+  }
+}
+
+/* Sticky call button pulse ring */
+@keyframes ping-once {
+  0% { transform: scale(1); opacity: 0.8; }
+  80% { transform: scale(1.4); opacity: 0; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+.call-pulse::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 9999px;
+  background: #dc2626;
+  animation: ping-once 2s ease-out infinite;
+  z-index: -1;
+}
