@@ -121,7 +121,7 @@ const localBusinessSchema = {
     worstRating: '1',
   },
   sameAs: [
-    'https://www.facebook.com/carkeysleeds',
+    'https://www.facebook.com/mickkirk61',
     'https://www.google.com/maps?cid=carkeysleeds',
   ],
 }
