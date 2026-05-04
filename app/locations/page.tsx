@@ -5,7 +5,7 @@ import CTA from '@/components/CTA'
 export const metadata: Metadata = {
   title: 'Auto Locksmith Coverage Areas Leeds | All LS Postcodes',
   description:
-    'Mobile auto locksmith covering all Leeds postcodes and surrounding areas. Based in Middleton LS10 — 30–60 min response across Leeds. Call 07700 900000.',
+    'Mobile auto locksmith covering all Leeds postcodes and surrounding areas. Based in Middleton LS10 — 30–60 min response across Leeds. Call 07940 757717.',
   alternates: { canonical: 'https://carkeysleeds.co.uk/locations' },
 }
 
@@ -92,11 +92,11 @@ export default function LocationsPage() {
           <p className="text-slate-300 text-sm leading-relaxed mb-4">
             We operate throughout West Yorkshire and can reach many areas outside of Leeds itself. If you&apos;re not sure whether we cover your location, just call — we&apos;ll let you know immediately.
           </p>
-          <a href="tel:+447700900000" className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-6 py-3 rounded-lg transition-colors">
+          <a href="tel:+447940757717" className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-6 py-3 rounded-lg transition-colors">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
             </svg>
-            Check Your Area — Call 07700 900000
+            Check Your Area — Call 07940 757717
           </a>
         </div>
       </section>

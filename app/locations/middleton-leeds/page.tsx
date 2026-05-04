@@ -7,7 +7,7 @@ import Reviews from '@/components/Reviews'
 export const metadata: Metadata = {
   title: 'Auto Locksmith Middleton Leeds LS10 | Car Keys | 20–35 Min Response',
   description:
-    'Mobile auto locksmith in Middleton, Leeds LS10. Car key replacement, lockouts & programming. Fastest response in South Leeds — typically 20–35 mins. Call 07700 900000.',
+    'Mobile auto locksmith in Middleton, Leeds LS10. Car key replacement, lockouts & programming. Fastest response in South Leeds — typically 20–35 mins. Call 07940 757717.',
   alternates: { canonical: 'https://carkeysleeds.co.uk/locations/middleton-leeds' },
   openGraph: {
     title: 'Auto Locksmith Middleton Leeds | Car Keys LS10',
@@ -22,7 +22,7 @@ const localBusinessSchema = {
   description:
     'Mobile auto locksmith based in Middleton, Leeds LS10. Fastest response in South Leeds — typically 20–35 minutes for Middleton, Beeston, Hunslet, and surrounding LS10/LS11 areas.',
   url: 'https://carkeysleeds.co.uk/locations/middleton-leeds',
-  telephone: '+447700900000',
+  telephone: '+447940757717',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Middleton',
@@ -116,13 +116,13 @@ export default function MiddletonLeedsPage() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="tel:+447700900000"
+              href="tel:+447940757717"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-500 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-xl transition-all duration-200"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
               </svg>
-              Call 07700 900000
+              Call 07940 757717
             </a>
           </div>
         </div>

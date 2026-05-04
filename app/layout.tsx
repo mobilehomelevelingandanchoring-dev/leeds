@@ -67,7 +67,7 @@ const localBusinessSchema = {
   description:
     'Mobile auto locksmith serving Leeds and surrounding areas. Specialists in car key replacement, key programming, and emergency vehicle access.',
   url: 'https://carkeysleeds.co.uk',
-  telephone: '+447700900000',
+  telephone: '+447940757717',
   priceRange: '££',
   image: 'https://carkeysleeds.co.uk/og-image.jpg',
   address: {

@@ -18,7 +18,7 @@ export default function NotFound() {
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link href="/" className="btn-primary">Back to Homepage</Link>
-          <a href="tel:+447700900000" className="btn-emergency">Call 07700 900000</a>
+          <a href="tel:+447940757717" className="btn-emergency">Call 07940 757717</a>
         </div>
       </div>
     </div>

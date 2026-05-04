@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react'
 
-const PHONE = '07700 900000'
-const PHONE_HREF = 'tel:+447700900000'
+const PHONE = '07940 757717'
+const PHONE_HREF = 'tel:+447940757717'
 
 export default function StickyCallButton() {
   const [visible, setVisible] = useState(false)

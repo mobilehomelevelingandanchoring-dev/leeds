@@ -6,7 +6,7 @@ import CTA from '@/components/CTA'
 export const metadata: Metadata = {
   title: 'Car Lockout Service Leeds | Emergency Vehicle Access | 24/7',
   description:
-    'Locked out of your car in Leeds? Our mobile auto locksmith reaches you in 30–60 minutes, 24/7. Non-destructive entry. All makes covered. Call 07700 900000.',
+    'Locked out of your car in Leeds? Our mobile auto locksmith reaches you in 30–60 minutes, 24/7. Non-destructive entry. All makes covered. Call 07940 757717.',
   alternates: { canonical: 'https://carkeysleeds.co.uk/services/car-lockout' },
   openGraph: {
     title: 'Car Lockout Leeds | Emergency Access | 24/7',
@@ -24,7 +24,7 @@ const serviceSchema = {
     '@type': 'LocksmithBusiness',
     name: 'Car Keys Leeds',
     url: 'https://carkeysleeds.co.uk',
-    telephone: '+447700900000',
+    telephone: '+447940757717',
   },
   areaServed: { '@type': 'City', name: 'Leeds' },
   offers: {
@@ -117,13 +117,13 @@ export default function CarLockoutPage() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="tel:+447700900000"
+              href="tel:+447940757717"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-500 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-xl transition-all duration-200"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
               </svg>
-              Call 07700 900000 Now
+              Call 07940 757717 Now
             </a>
             <Link
               href="/services/car-key-replacement"
@@ -195,7 +195,7 @@ export default function CarLockoutPage() {
               "Stay calm. If you're on a busy road, move to a safe location away from traffic.",
               "Check all doors and the boot — occasionally a door is still open.",
               "If a child or pet is locked inside and distressed, call 999 immediately.",
-              "Call us on 07700 900000. Tell us your location and vehicle make/model.",
+              "Call us on 07940 757717. Tell us your location and vehicle make/model.",
               "We'll confirm a fixed price and give you an accurate ETA.",
               "Wait in a safe, visible spot. We'll call you when we're 10 minutes away.",
             ].map((step, i) => (

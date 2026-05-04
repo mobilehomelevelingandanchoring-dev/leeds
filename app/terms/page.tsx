@@ -46,7 +46,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="text-xl font-bold text-brand-navy">Contact</h2>
-          <p>For any queries about these terms, contact us at <a href="mailto:info@carkeysleeds.co.uk" className="text-brand-blue hover:underline">info@carkeysleeds.co.uk</a> or call 07700 900000.</p>
+          <p>For any queries about these terms, contact us at <a href="mailto:info@carkeysleeds.co.uk" className="text-brand-blue hover:underline">info@carkeysleeds.co.uk</a> or call 07940 757717.</p>
         </section>
       </div>
 

@@ -2,16 +2,18 @@ import type { Metadata } from 'next'
 import Hero from '@/components/Hero'
 import TrustBar from '@/components/TrustBar'
 import Services from '@/components/Services'
+import Accreditations from '@/components/Accreditations'
 import Areas from '@/components/Areas'
 import Reviews from '@/components/Reviews'
 import FAQ from '@/components/FAQ'
 import CTA from '@/components/CTA'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Car Keys Leeds | Mobile Auto Locksmith | 24/7 Emergency Service',
   description:
-    'Emergency mobile auto locksmith serving all of Leeds. Lost car keys, locked out, key programming. 30–60 min response. Fully insured. Call 07700 900000.',
+    'Emergency mobile auto locksmith serving all of Leeds. Lost car keys, locked out, key programming. 30–60 min response. Fully insured. Call 07940 757717.',
   alternates: { canonical: 'https://carkeysleeds.co.uk' },
 }
 
@@ -81,17 +83,20 @@ export default function HomePage() {
       {/* Services section */}
       <Services />
 
+      {/* Accreditations */}
+      <Accreditations />
+
       {/* Why Choose Us */}
       <section className="section-pad bg-slate-50" aria-labelledby="why-us-heading">
         <div className="container-max">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-amber-600 font-semibold text-sm uppercase tracking-wider mb-2">Why Car Keys Leeds</p>
+              <p className="text-amber-600 font-semibold text-sm uppercase tracking-wider mb-2">Why Motorkeys</p>
               <h2 id="why-us-heading" className="text-3xl sm:text-4xl font-extrabold text-brand-navy mb-4">
                 Your Local Leeds Auto Locksmith — Not a National Call Centre
               </h2>
               <p className="text-slate-600 leading-relaxed mb-6">
-                When you call us, you speak directly to the locksmith who&apos;s coming out to you. No middlemen, no outsourcing to whoever&apos;s cheapest. We&apos;re based in Middleton and have been serving Leeds motorists for years — you might have seen our van on the Middleton Park estate or parked up in Beeston or Morley.
+                When you call us, you speak directly to Mick — the locksmith who&apos;s coming out to you. No middlemen, no outsourcing to whoever is cheapest on the day. We&apos;re based in Middleton and have been serving Leeds motorists for years. You might have seen the van on the Middleton Park estate, parked up in Beeston, or on a callout in Morley town centre.
               </p>
               <p className="text-slate-600 leading-relaxed mb-8">
                 We carry stock for the most common Leeds vehicles — Ford Fiestas, Vauxhall Astras, VW Golfs, Nissan Qashqais — meaning we can often complete the job in a single visit without ordering parts.
@@ -107,14 +112,29 @@ export default function HomePage() {
                 </svg>
               </Link>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-              {whyUsPoints.map((point) => (
-                <div key={point.title} className="bg-white rounded-xl p-5 shadow-sm border border-slate-100">
-                  <div className="text-brand-blue mb-3">{point.icon}</div>
-                  <h3 className="font-bold text-brand-navy mb-1.5">{point.title}</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">{point.description}</p>
+            <div className="space-y-5">
+              {/* Job photo — real Renault key work */}
+              <div className="relative rounded-xl overflow-hidden shadow-md border border-slate-100">
+                <Image
+                  src="/images/renault-key-job.webp"
+                  alt="Completed Renault car key replacement job — new key on steering wheel, programmed on-site in Leeds by Motorkeys Auto Locksmiths"
+                  width={600}
+                  height={340}
+                  className="w-full object-cover max-h-52"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/80 to-transparent px-4 py-3">
+                  <p className="text-white text-sm font-semibold">Real job — Renault key replacement, completed on-site in Leeds</p>
                 </div>
-              ))}
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {whyUsPoints.map((point) => (
+                  <div key={point.title} className="bg-white rounded-xl p-5 shadow-sm border border-slate-100">
+                    <div className="text-brand-blue mb-3">{point.icon}</div>
+                    <h3 className="font-bold text-brand-navy mb-1.5">{point.title}</h3>
+                    <p className="text-slate-600 text-sm leading-relaxed">{point.description}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -127,13 +147,13 @@ export default function HomePage() {
             Locked out right now? Call us — we&apos;ll be there within the hour.
           </p>
           <a
-            href="tel:+447700900000"
+            href="tel:+447940757717"
             className="shrink-0 inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-bold px-7 py-3 rounded-lg transition-colors shadow-md"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
             </svg>
-            07700 900000
+            07940 757717
           </a>
         </div>
       </div>

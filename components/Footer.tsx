@@ -1,7 +1,8 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
-const PHONE = '07700 900000'
-const PHONE_HREF = 'tel:+447700900000'
+const PHONE = '07940 757717'
+const PHONE_HREF = 'tel:+447940757717'
 const EMAIL = 'info@carkeysleeds.co.uk'
 
 const serviceLinks = [
@@ -30,20 +31,23 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4" aria-label="Car Keys Leeds - Home">
-              <div className="w-9 h-9 bg-amber-500 rounded-lg flex items-center justify-center">
-                <svg className="w-5 h-5 text-brand-navy" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M12.65 10A5.99 5.99 0 0 0 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6a5.99 5.99 0 0 0 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
-                </svg>
-              </div>
-              <div>
-                <div className="font-bold text-white text-lg leading-none">Car Keys Leeds</div>
-                <div className="text-amber-400 text-xs">Mobile Auto Locksmith</div>
-              </div>
+            <Link href="/" className="flex items-center gap-2 mb-4" aria-label="Motorkeys Auto Locksmiths - Home">
+              <Image
+                src="/images/logo.webp"
+                alt="Motorkeys Auto Locksmiths"
+                width={140}
+                height={56}
+                className="h-12 w-auto object-contain brightness-200"
+              />
             </Link>
-            <p className="text-sm text-slate-400 leading-relaxed mb-5">
-              Leeds&apos; trusted mobile auto locksmith. Based in Middleton, serving all LS postcodes. Available 24 hours, 7 days a week.
+            <p className="text-sm text-slate-400 leading-relaxed mb-3">
+              Motorkeys Auto Locksmiths — MLA-approved mobile auto locksmith based in Middleton, Leeds. Serving all LS postcodes 24 hours a day, 7 days a week.
             </p>
+            <div className="flex items-center gap-2 mb-5">
+              <span className="inline-flex items-center gap-1.5 bg-yellow-500/20 border border-yellow-500/40 text-yellow-300 text-xs font-semibold px-3 py-1 rounded-full">
+                🏅 MLA Approved · No. 003625
+              </span>
+            </div>
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2">
                 <svg className="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -138,8 +142,8 @@ export default function Footer() {
             </div>
             <div className="bg-white/5 rounded-xl p-4 border border-white/10">
               <p className="text-xs text-slate-400 leading-relaxed">
-                <strong className="text-white block mb-1">Fully Insured &amp; Accredited</strong>
-                All work is fully insured. We carry public liability insurance and are members of the Master Locksmiths Association.
+                <strong className="text-white block mb-1">Fully Insured &amp; MLA Approved</strong>
+                MLA Approved Company, Membership No. 003625. Also a member of the Auto Locksmiths Association (ALA). All work fully insured with public liability cover.
               </p>
             </div>
           </div>
