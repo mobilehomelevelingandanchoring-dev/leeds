@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next'
+import { brandSlugs } from '@/lib/brands'
 
 const BASE = 'https://carkeysleeds.co.uk'
 
@@ -6,6 +7,7 @@ const BASE = 'https://carkeysleeds.co.uk'
 // as "modified today" on every deploy, wasting crawl budget.
 const SITE_LAUNCH = new Date('2025-04-01')
 const CONTENT_UPDATED = new Date('2025-10-01')
+const BRANDS_UPDATED = new Date('2026-05-09')
 
 const services = [
   'car-key-replacement',
@@ -77,6 +79,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: PRIMARY_LOCATIONS.has(slug) ? CONTENT_UPDATED : SITE_LAUNCH,
       changeFrequency: 'monthly' as const,
       priority: slug === 'middleton-leeds' ? 0.9 : PRIMARY_LOCATIONS.has(slug) ? 0.8 : 0.7,
+    })),
+    {
+      url: `${BASE}/makes`,
+      lastModified: BRANDS_UPDATED,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    ...brandSlugs.map(slug => ({
+      url: `${BASE}/makes/${slug}`,
+      lastModified: BRANDS_UPDATED,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
     })),
     {
       url: `${BASE}/contact`,

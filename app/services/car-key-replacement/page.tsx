@@ -296,7 +296,7 @@ export default function CarKeyReplacementPage() {
         </section>
 
         {/* Internal links */}
-        <div className="bg-slate-50 rounded-2xl p-6 mb-12 border border-slate-200">
+        <div className="bg-slate-50 rounded-2xl p-6 mb-6 border border-slate-200">
           <h3 className="font-bold text-brand-navy mb-3">Related Services</h3>
           <div className="flex flex-wrap gap-3">
             <Link href="/services/car-lockout" className="text-sm text-brand-blue hover:text-amber-600 font-medium transition-colors">
@@ -310,6 +310,21 @@ export default function CarKeyReplacementPage() {
             </Link>
             <Link href="/locations/middleton-leeds" className="text-sm text-brand-blue hover:text-amber-600 font-medium transition-colors">
               → Middleton Leeds Coverage
+            </Link>
+          </div>
+        </div>
+
+        <div className="bg-brand-navy rounded-2xl p-6 mb-12 text-white">
+          <h3 className="font-bold text-lg mb-3">Car Keys by Make</h3>
+          <p className="text-slate-300 text-sm mb-4">Need make-specific pricing and key technology details? Select your brand for a dedicated page.</p>
+          <div className="flex flex-wrap gap-2">
+            {['Ford', 'Vauxhall', 'Volkswagen', 'Audi', 'BMW', 'Mercedes', 'Toyota', 'Nissan', 'Renault', 'Hyundai', 'Kia', 'Land Rover'].map(make => (
+              <Link key={make} href={`/makes/${make.toLowerCase().replace(' ', '-')}`} className="bg-white/10 hover:bg-amber-500 hover:text-slate-900 text-white text-sm font-medium px-3 py-1.5 rounded-full transition-all duration-200">
+                {make}
+              </Link>
+            ))}
+            <Link href="/makes" className="bg-amber-500 text-slate-900 text-sm font-bold px-3 py-1.5 rounded-full">
+              All Makes →
             </Link>
           </div>
         </div>
