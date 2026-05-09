@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CTA from '@/components/CTA'
-import { locationSchema, breadcrumbSchema } from '@/lib/schema'
+import { locationSchema, breadcrumbSchema, faqSchema } from '@/lib/schema'
 
 export const revalidate = false
 
@@ -31,11 +31,24 @@ const crumbSchema = breadcrumbSchema([
   { name: 'Morley Leeds', item: PAGE_URL },
 ])
 
+const morleyFaqs = [
+  { q: 'How long does it take you to reach Morley LS27?', a: "Morley is 25–40 minutes from our Middleton base via the A650 and A643. We'll give you an accurate ETA when you call. During quiet periods, particularly at night, we're often at the lower end of that estimate." },
+  { q: 'Do you cover Churwell, Gildersome, and Tingley as well?', a: "Yes — all of LS27 is covered, including Churwell, Gildersome, Tingley, and the areas around Morley town centre, Queen Street, Albion Street, and the Fountain Street residential area. Give us your street name and we'll find you." },
+  { q: 'How much does a car lockout cost in Morley?', a: "Standard car lockout in LS27 starts from £60 during the day, £70–£100 at night or weekends. The price is fixed and confirmed over the phone before we travel — no surprises on arrival." },
+  { q: 'Can you replace a car key in Morley the same day?', a: "Yes. Same-day service is available across LS27. For the most common vehicles in Morley — Ford Focus, Nissan Qashqai, Vauxhall Astra — we typically carry key stock and can complete the job in a single visit without ordering parts." },
+  { q: 'Are you available at night and on weekends in Morley?', a: "Yes — 24 hours a day, 7 days a week. Evenings and weekends are two of our busiest periods in Morley. We treat out-of-hours callouts the same as daytime jobs — same quality, fixed price quoted beforehand." },
+  { q: "I'm stranded in Morley town centre car park — can you find me?", a: "Absolutely. Morley town centre is an area we know well. Tell us the car park name or the street (Queen Street, Corporation Street, Town Street) and we'll be with you in 25–40 minutes." },
+  { q: 'Do you need any documents before you can help?', a: "We require proof that you own the vehicle before cutting or programming any key. A V5C logbook, valid insurance document showing your name and the registration, or a finance agreement are all acceptable. For lockouts where you're simply locked out, we use common sense verification (driver's licence, credit card with name matching the registered keeper)." },
+]
+
+const morleyFaqSchema = faqSchema(morleyFaqs)
+
 export default function MorleyLeedsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(morleyFaqSchema) }} />
 
       <section className="bg-brand-navy py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
@@ -112,6 +125,20 @@ export default function MorleyLeedsPage() {
                 <h3 className="font-bold text-brand-navy mb-1.5">{s.title}</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">{s.desc}</p>
               </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-10" aria-labelledby="morley-faq">
+          <h2 id="morley-faq" className="text-2xl sm:text-3xl font-extrabold text-brand-navy mb-6">
+            Questions from Morley Customers
+          </h2>
+          <div className="space-y-5">
+            {morleyFaqs.map((item) => (
+              <div key={item.q} className="p-5 bg-slate-50 border border-slate-200 rounded-xl">
+                <h3 className="font-bold text-brand-navy mb-2">{item.q}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{item.a}</p>
+              </div>
             ))}
           </div>
         </section>

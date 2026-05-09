@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CTA from '@/components/CTA'
+import { faqSchema as buildFaqSchema } from '@/lib/schema'
 
 export const revalidate = false
 
@@ -23,9 +24,24 @@ const vans = [
   'Fiat Doblo', 'Fiat Ducato', 'Iveco Daily',
 ]
 
+const vanFaqs = [
+  { q: 'How long does a van key replacement take?', a: 'Most standard van key replacements take 45–75 minutes from our arrival. Commercial vans often have more security layers than passenger cars, so the process takes slightly longer — but we carry equipment for all major van brands and complete the majority of jobs in a single visit.' },
+  { q: 'Do you carry van key stock on the vehicle?', a: 'Yes. We carry key blanks and programming data for the most common commercial vans in the Leeds area: Ford Transit (all variants), Mercedes Sprinter, VW Transporter, Vauxhall Vivaro, and Renault Trafic. For less common models we may need to order a blank, but we\'ll tell you over the phone whether it\'s a same-day job or a next-day job.' },
+  { q: 'Can you help with a lease van or fleet vehicle?', a: "Yes, provided you have appropriate authorisation. For lease vans, your lease agreement or a letter from the fleet manager is usually sufficient. For company fleet vehicles, a letter of authorisation on company headed paper is standard. Call us and we'll advise exactly what documentation we need before travelling." },
+  { q: 'My van has separate keys for the ignition and the back doors — will a new key work on all of them?', a: 'Some older van models use separate keys for cab and cargo area. We can cut keys for both systems in the same visit. Tell us this when you call so we can confirm we have blanks for both lock profiles and bring the right equipment.' },
+  { q: 'Can you come to a building site, industrial estate, or commercial address?', a: 'Yes. We cover commercial addresses across Leeds regularly — trading estates in Morley, building sites, distribution centres, and depots. We just need a postcode or clear directions when you call. We work from the kerbside or yard and don\'t need workshop access.' },
+  { q: 'Do you cover newer vans with smart keyless entry?', a: 'Yes. Keyless entry is increasingly common on newer Ford Transit Custom, VW Transporter T6.1, and Mercedes Sprinter models. Smart van keys require specialist programming and we carry the relevant equipment. Call with your van make, model year, and variant and we\'ll confirm before travelling.' },
+  { q: "I've lost all my van keys — can you still help?", a: "Yes. All-keys-lost jobs on vans are more complex but we handle them regularly. We'll need proof of ownership or authorisation for the vehicle. Once verified, we create a replacement key from the VIN and lock data, programme it to the ECU, and test it fully before we leave. Expect 60–90 minutes for a complete all-keys-lost van job." },
+  { q: 'Can you programme keys for multiple vans in one visit (fleet)?', a: "Yes. If you're managing a fleet and need multiple vehicles sorted, we offer depot visits where we work through several vehicles in one session. This is more cost-effective than separate call-outs and minimises downtime. Call us to discuss your fleet situation and we'll plan accordingly." },
+]
+
+const vanFaqSchema = buildFaqSchema(vanFaqs)
+
 export default function VanKeysPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(vanFaqSchema) }} />
+
       <section className="bg-brand-navy py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <nav className="flex items-center gap-2 text-sm text-slate-400 mb-6" aria-label="Breadcrumb">
@@ -130,6 +146,21 @@ export default function VanKeysPage() {
             ))}
           </div>
           <p className="text-slate-500 text-xs mt-4">Fixed prices confirmed over the phone. VAT receipts provided.</p>
+        </section>
+
+        {/* Page-specific FAQ */}
+        <section className="mb-10" aria-labelledby="van-faq">
+          <h2 id="van-faq" className="text-2xl sm:text-3xl font-extrabold text-brand-navy mb-6">
+            Van Key Services — Frequently Asked Questions
+          </h2>
+          <div className="space-y-5">
+            {vanFaqs.map((item) => (
+              <div key={item.q} className="p-5 bg-slate-50 border border-slate-200 rounded-xl">
+                <h3 className="font-bold text-brand-navy mb-2">{item.q}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
         <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 import CTA from '@/components/CTA'
 import Reviews from '@/components/Reviews'
-import { serviceSchema, breadcrumbSchema, howToSchema, speakableSchema } from '@/lib/schema'
+import { serviceSchema, breadcrumbSchema, howToSchema, speakableSchema, faqSchema } from '@/lib/schema'
 
 export const revalidate = false
 
@@ -72,6 +72,19 @@ const howTo = howToSchema({
 
 const speakable = speakableSchema(PAGE_URL, ['h1', '#what-we-do', '#how-it-works'])
 
+const pageFaqs = [
+  { q: 'What is the difference between key cutting and key programming?', a: 'Key cutting shapes the physical blade so it turns the lock mechanically. Key programming writes a unique code from the transponder chip into your car\'s ECU so the immobiliser recognises it. Both are required on any post-2000 vehicle — a cut-only key will turn but won\'t start the engine.' },
+  { q: 'Can you replace my car key if I have no original at all?', a: 'Yes. For most vehicles we can create a replacement from scratch using the VIN and lock data. You\'ll need to prove ownership — a V5C logbook, valid insurance certificate, or finance agreement. Once verified, we cut and programme a fully working key in a single visit.' },
+  { q: 'How long does car key replacement take at my location?', a: 'Once we arrive, most standard replacements take 30–60 minutes — cutting the blade, programming the transponder, and testing locks, ignition, and remote functions. All-keys-lost jobs on high-security vehicles occasionally take slightly longer due to additional security steps.' },
+  { q: 'Can I get a spare key made at the same visit?', a: 'Yes — and we recommend it. Getting a second key cut while we\'re already there adds very little to the total cost compared to calling us back separately. Tell us when you phone and we\'ll bring the right blank for a second key.' },
+  { q: 'Will a key from you be any different to one from the dealer?', a: 'No. We use OEM or equivalent-quality key blanks and the same calibre of programming equipment as main dealers. The key is indistinguishable in function. The difference is we come to you, cost significantly less, and are available 24/7 — dealers typically need several days and charge £250–£400+.' },
+  { q: 'My car has push-button start and keyless entry — can you replace that key?', a: 'Yes. Smart and proximity keys require specialist programming equipment, which we carry for Ford, VW, Audi, BMW, Mercedes, Nissan, Kia, Hyundai, Toyota, and most other mainstream brands. Call with your specific model and year for confirmation before booking.' },
+  { q: 'How do you cut a key if there is no original to copy from?', a: 'We use your vehicle\'s lock profile data, accessed via the OBD diagnostic port and automotive database, to determine the correct key cut code. This allows us to cut a new blade to exact specification without needing the original to copy from. This is standard professional locksmith practice.' },
+  { q: 'What if the new key turns but the engine still won\'t start?', a: 'This usually means the transponder chip hasn\'t programmed correctly — sometimes caused by a low vehicle battery or an ECU issue. We troubleshoot this on-site. If the programming fails due to a vehicle fault (not a key issue), we\'ll explain exactly what\'s needed and won\'t charge for a key that doesn\'t work.' },
+]
+
+const pageFaqSchema = faqSchema(pageFaqs)
+
 export default function CarKeyReplacementPage() {
   return (
     <>
@@ -79,6 +92,7 @@ export default function CarKeyReplacementPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howTo) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakable) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageFaqSchema) }} />
 
       {/* Page hero */}
       <section className="bg-brand-navy py-16 px-4 sm:px-6 lg:px-8">
@@ -264,6 +278,21 @@ export default function CarKeyReplacementPage() {
           <p className="text-slate-500 text-xs mt-4">
             * All prices include call-out, key cutting, and programming. VAT receipts provided. We quote fixed prices over the phone.
           </p>
+        </section>
+
+        {/* Page-specific FAQ */}
+        <section className="mb-12" aria-labelledby="replacement-faq">
+          <h2 id="replacement-faq" className="text-2xl sm:text-3xl font-extrabold text-brand-navy mb-6">
+            Car Key Replacement — Frequently Asked Questions
+          </h2>
+          <div className="space-y-5">
+            {pageFaqs.map((item) => (
+              <div key={item.q} className="p-5 bg-slate-50 border border-slate-200 rounded-xl">
+                <h3 className="font-bold text-brand-navy mb-2">{item.q}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* Internal links */}

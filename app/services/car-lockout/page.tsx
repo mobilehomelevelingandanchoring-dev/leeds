@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 import CTA from '@/components/CTA'
+import { faqSchema as buildFaqSchema } from '@/lib/schema'
 
 export const revalidate = false
 
@@ -48,6 +49,19 @@ const breadcrumbSchema = {
   ],
 }
 
+const lockoutFaqs = [
+  { q: 'How do you open a car without the key?', a: 'We use a combination of professional long-reach tools, air wedge door openers, and slim-jim techniques. An air wedge creates a small, controlled gap in the door frame; a long-reach tool is then used to manipulate the interior handle or unlock button. The entire process is non-destructive and leaves no marks on the vehicle.' },
+  { q: 'Will your entry method damage my car?', a: 'No. Professional non-destructive entry — when performed correctly — leaves no scratches, no bent frames, and no damaged seals. We carry out hundreds of lockouts per year across Leeds and our record of zero-damage entry is something we take seriously. We only use calibrated professional tools, never improvised methods.' },
+  { q: 'Do I need to prove the car is mine before you open it?', a: "Yes — we always verify ownership before opening a vehicle. This protects you as much as anyone else. Acceptable proof includes: driver's licence matching the registered keeper name, V5C logbook, or valid insurance certificate. If you're in a company vehicle, employer ID is usually sufficient. We can check details over the phone before we travel." },
+  { q: 'How long does unlocking a car actually take on-site?', a: 'Most standard lockouts take 5–20 minutes from our arrival to you being back in the vehicle. The exact time depends on the vehicle make, model, and which entry technique is applicable. We let you know what to expect when you call.' },
+  { q: 'What if my car has a broken lock rather than just being locked out?', a: "A broken lock barrel, a seized mechanism, or a bent key that won't turn are all situations we handle. These are technically repair or replacement jobs rather than lockouts, but we diagnose and resolve them on-site. Call us and describe the symptoms — we'll tell you what's likely needed and quote accordingly." },
+  { q: 'Can you open any make and model of car?', a: 'We cover the vast majority of makes and models on UK roads. Certain vehicles — particularly older high-security models or unusual imports — may require specialist approach; call us and we\'ll confirm before travelling. If we cannot help with a specific vehicle, we\'ll tell you straight rather than waste your time.' },
+  { q: 'What should I do if a child or pet is locked inside the car?', a: 'If there is any immediate risk — high temperature, distress, or medical emergency — call 999 immediately. Fire and rescue can gain entry quickly in genuine emergencies. For non-emergency situations (child sleeping safely, mild conditions), call us and we will treat it as a priority call-out. We will also advise you on next steps over the phone while we travel.' },
+  { q: "I'm stranded on a busy road or near the motorway — can you still help?", a: "Yes. Please move to a safe location away from traffic first if possible. We attend roadside lockouts on A-roads and near motorway junctions regularly — the M62, M1, and A58/A639 corridors near Leeds are all within our coverage. Give us your precise location (junction number, direction, nearest landmark) when you call and we'll find you." },
+]
+
+const lockoutFaqSchema = buildFaqSchema(lockoutFaqs)
+
 const lockoutScenarios = [
   {
     icon: '🔑',
@@ -86,6 +100,7 @@ export default function CarLockoutPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(lockoutFaqSchema) }} />
 
       {/* Hero */}
       <section className="bg-brand-navy py-16 px-4 sm:px-6 lg:px-8">
@@ -233,6 +248,21 @@ export default function CarLockoutPage() {
           <p className="text-slate-500 text-xs mt-4">
             * Fixed price confirmed over the phone before we travel. No surprise charges.
           </p>
+        </section>
+
+        {/* Page-specific FAQ */}
+        <section className="mb-12" aria-labelledby="lockout-faq">
+          <h2 id="lockout-faq" className="text-2xl sm:text-3xl font-extrabold text-brand-navy mb-6">
+            Car Lockout — Frequently Asked Questions
+          </h2>
+          <div className="space-y-5">
+            {lockoutFaqs.map((item) => (
+              <div key={item.q} className="p-5 bg-slate-50 border border-slate-200 rounded-xl">
+                <h3 className="font-bold text-brand-navy mb-2">{item.q}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* Internal links */}

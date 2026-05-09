@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CTA from '@/components/CTA'
+import { faqSchema as buildFaqSchema } from '@/lib/schema'
 
 export const revalidate = false
 
@@ -11,9 +12,24 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://carkeysleeds.co.uk/services/spare-key-cutting' },
 }
 
+const spareKeyFaqs = [
+  { q: "Can I get a spare key cut if I don't currently have the original with me?", a: "Not using the standard cloning method — we need an existing working key to copy from. However, if you have access to the vehicle, we can potentially work from the lock data and VIN directly. Call us and explain the situation; in many cases we can still complete the job, it may just take slightly longer." },
+  { q: 'How much cheaper is a spare key compared to an emergency replacement?', a: "Significantly cheaper. A spare key cut while you still have the original typically costs £80–£160 depending on key type. An emergency replacement after all keys are lost starts from £150 and can reach £280+ for complex keys, because we need to source data from the vehicle directly rather than cloning an existing key. The maths strongly favour doing it now." },
+  { q: 'How long does it take to cut and programme a spare key?', a: 'Most spare key jobs take 30–45 minutes from our arrival. We cut the blade, programme the transponder, and test both keys fully — locks, ignition, central locking, and remote. You leave with two completely working keys.' },
+  { q: "Does my insurance company need to know I've had a spare key made?", a: "No — getting a spare key is standard practice and you don't need to notify your insurer. However, if you store the spare in your home and your home is later burgled, notify your insurer about the missing spare key, as it may affect your car insurance cover." },
+  { q: "What's the difference between a cloned key and a programmed spare?", a: "A cloned key copies the exact transponder chip code from your existing key onto a new blank — both keys then have identical chip codes. A programmed spare is assigned its own unique code that is added to the ECU's authorised list alongside your existing key. We use whichever method is appropriate and more secure for your specific vehicle." },
+  { q: 'Will the spare key have all the same functions — remote, ignition, immobiliser?', a: "Yes. We cut the blade to match your locks, programme the transponder chip so the immobiliser accepts it, and sync the central locking remote. The spare key will function identically to your original in all respects." },
+  { q: 'Can you cut a spare key for a leased or company car?', a: "Yes, provided you have authorisation from the company or lease provider. For company cars, a letter of authorisation from your employer is usually sufficient. For leased vehicles, check your lease agreement — most leases allow additional keys to be cut at the lessee's expense." },
+  { q: 'Is getting a spare key done at home or do I come to you?', a: 'We come to you — your home, workplace, or any convenient location in Leeds. You simply need to have the car and your existing working key available. There is no need to visit a workshop or tow the vehicle anywhere.' },
+]
+
+const spareKeyFaqSchema = buildFaqSchema(spareKeyFaqs)
+
 export default function SpareKeyCuttingPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(spareKeyFaqSchema) }} />
+
       <section className="bg-brand-navy py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <nav className="flex items-center gap-2 text-sm text-slate-400 mb-6" aria-label="Breadcrumb">
@@ -122,6 +138,21 @@ export default function SpareKeyCuttingPage() {
             ))}
           </div>
           <p className="text-slate-500 text-xs mt-4">Fixed prices confirmed over the phone before we travel.</p>
+        </section>
+
+        {/* Page-specific FAQ */}
+        <section className="mb-10" aria-labelledby="spare-key-faq">
+          <h2 id="spare-key-faq" className="text-2xl sm:text-3xl font-extrabold text-brand-navy mb-6">
+            Spare Key Cutting — Frequently Asked Questions
+          </h2>
+          <div className="space-y-5">
+            {spareKeyFaqs.map((item) => (
+              <div key={item.q} className="p-5 bg-slate-50 border border-slate-200 rounded-xl">
+                <h3 className="font-bold text-brand-navy mb-2">{item.q}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
         <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">

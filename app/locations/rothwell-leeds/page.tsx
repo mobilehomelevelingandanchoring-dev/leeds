@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CTA from '@/components/CTA'
-import { locationSchema, breadcrumbSchema } from '@/lib/schema'
+import { locationSchema, breadcrumbSchema, faqSchema } from '@/lib/schema'
 
 export const revalidate = false
 
@@ -31,11 +31,24 @@ const crumbSchema = breadcrumbSchema([
   { name: 'Rothwell Leeds', item: PAGE_URL },
 ])
 
+const rothwellFaqs = [
+  { q: 'How quickly can you reach Rothwell LS26?', a: "Rothwell is 25–40 minutes from our Middleton base via the A654. Road conditions permitting, we're often at the lower end of that window. We give you a precise ETA when you call — and we call you when we're 10 minutes away." },
+  { q: 'Do you cover Oulton, Woodlesford, and Robin Hood?', a: "Yes — we cover the full LS26 postcode and surrounding areas including Oulton, Woodlesford, Robin Hood, Royds Lane, and the residential developments around Commercial Road and Fleet Lane. Tell us the street or landmark when you call." },
+  { q: 'How much does emergency car lockout cost in Rothwell?', a: "Standard lockout starts from £60 during the day, £70–£100 at night or on weekends. Price is confirmed over the phone before we travel. No call-out charge added separately." },
+  { q: "I'm near the M62 in Rothwell — can you reach me roadside?", a: "Yes. We attend motorway-adjacent and roadside callouts in the Rothwell and Robin Hood area regularly. Move to a safe location away from traffic if possible, then call us with your precise location — junction number, road name, or direction of travel — and we'll be with you in 25–40 minutes." },
+  { q: 'What vehicles do you most commonly work on in Rothwell?', a: "In the LS26 area we most frequently work on Nissan Qashqai, Ford Kuga, Hyundai Tucson, Ford Fiesta, and Vauxhall Astra. We carry key stock for all of these models, meaning the majority of Rothwell jobs are completed in a single visit." },
+  { q: 'Can you replace a key for a car that came with only one key when I bought it?', a: "Yes. Second-hand vehicles frequently come with a single key, and getting a spare cut while you have the original is significantly cheaper than an emergency replacement later. Spare key jobs in Rothwell start from £80. Call us and we'll sort it the same day in most cases." },
+  { q: 'Do you provide a receipt I can use for an insurance claim?', a: "Yes. We provide a full VAT receipt on completion of every job. Most car insurance policies that include key cover will accept this receipt for a claim. We can also provide a brief job report if your insurer requires it." },
+]
+
+const rothwellFaqSchema = faqSchema(rothwellFaqs)
+
 export default function RothwellLeedsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(rothwellFaqSchema) }} />
 
       <section className="bg-brand-navy py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
@@ -112,6 +125,20 @@ export default function RothwellLeedsPage() {
                 <h3 className="font-bold text-brand-navy mb-1.5">{s.title}</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">{s.desc}</p>
               </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-10" aria-labelledby="rothwell-faq">
+          <h2 id="rothwell-faq" className="text-2xl sm:text-3xl font-extrabold text-brand-navy mb-6">
+            Questions from Rothwell Customers
+          </h2>
+          <div className="space-y-5">
+            {rothwellFaqs.map((item) => (
+              <div key={item.q} className="p-5 bg-slate-50 border border-slate-200 rounded-xl">
+                <h3 className="font-bold text-brand-navy mb-2">{item.q}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{item.a}</p>
+              </div>
             ))}
           </div>
         </section>

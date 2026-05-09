@@ -157,18 +157,13 @@ export const locations: LocationData[] = [
       { name: 'Chapel Allerton', slug: 'chapel-allerton-leeds', postcode: 'LS7' },
     ],
     faqs: [
-      {
-        q: 'Can you reach me in the NCP or Trinity Leeds car park?',
-        a: 'Yes — we attend car parks in the city centre regularly. Let us know the car park name and level when you call and we\'ll come straight to you. Multi-storey car parks are no problem.',
-      },
-      {
-        q: 'I\'m locked out of my company car in Leeds city centre — can you help?',
-        a: 'Absolutely. Company car lockouts are one of our most common city centre callouts. We handle fleet vehicles from most manufacturers and can gain non-destructive access, then cut and programme a replacement key if needed.',
-      },
-      {
-        q: 'How long will you be getting to Leeds city centre?',
-        a: 'Typically 25–40 minutes from our Middleton base. Road access into the city is straightforward via the A61 and A643. We\'ll give you a precise ETA when you call.',
-      },
+      { q: 'Can you reach me in the NCP or Trinity Leeds car park?', a: 'Yes — we attend car parks in the city centre regularly. Let us know the car park name and level when you call and we\'ll come straight to you. Multi-storey car parks are no problem.' },
+      { q: 'I\'m locked out of my company car in Leeds city centre — can you help?', a: 'Absolutely. Company car lockouts are one of our most common city centre callouts. We handle fleet vehicles from most manufacturers and can gain non-destructive access, then cut and programme a replacement key if needed.' },
+      { q: 'How long will you be getting to Leeds city centre?', a: 'Typically 25–40 minutes from our Middleton base. Road access into the city is straightforward via the A61 and A643. We\'ll give you a precise ETA when you call.' },
+      { q: 'How much does a car lockout cost in Leeds city centre?', a: 'Standard car lockout from £60 in the day, £70–£100 at night or weekends. We confirm the fixed price before we travel — no extra charges for city centre location or parking.' },
+      { q: 'Can you replace a car key in Leeds city centre on the same day?', a: 'Yes. Same-day service is available across LS1 and LS2. We come to wherever you are — a car park bay, a street, or outside your office — and complete the key cutting and programming on-site.' },
+      { q: 'Do you need proof I own the car before you open it or cut a key?', a: 'Yes — we verify ownership before any key work. For lockouts we use practical verification (driver\'s licence, matching insurance details). For key cutting and programming we require a V5C, insurance certificate, or equivalent document.' },
+      { q: 'Are you available in Leeds city centre at night and weekends?', a: 'Yes — 24 hours a day, 7 days a week. City centre callouts after midnight and on weekends are very common for us. Evening and night response times are often faster than daytime because roads are clear.' },
     ],
   },
 
@@ -198,18 +193,13 @@ export const locations: LocationData[] = [
       { name: 'Leeds City Centre', slug: 'leeds-city-centre', postcode: 'LS1' },
     ],
     faqs: [
-      {
-        q: 'Can you come to the Otley Road or Hyde Park area of Headingley?',
-        a: 'Yes — Otley Road and Hyde Park are both well within our Headingley coverage. We cover the full LS6 postcode. Just give us your street name when you call.',
-      },
-      {
-        q: 'I have an older car — do you cover pre-2010 keys?',
-        a: 'Definitely. Older vehicles are actually often simpler to work on. Pre-2010 keys are frequently non-transponder or early-transponder, which we program easily. Call with your make, model, and year.',
-      },
-      {
-        q: 'Can you replace a key fob battery on-site in Headingley?',
-        a: 'Yes. We carry common key fob batteries on board. If your fob has just stopped working, there\'s a good chance it\'s just a battery replacement, which we can do at your location in minutes.',
-      },
+      { q: 'Can you come to the Otley Road or Hyde Park area of Headingley?', a: 'Yes — Otley Road and Hyde Park are both well within our Headingley coverage. We cover the full LS6 postcode. Just give us your street name when you call.' },
+      { q: 'I have an older car — do you cover pre-2010 keys?', a: 'Definitely. Older vehicles are actually often simpler to work on. Pre-2010 keys are frequently non-transponder or early-transponder, which we program easily. Call with your make, model, and year.' },
+      { q: 'Can you replace a key fob battery on-site in Headingley?', a: 'Yes. We carry common key fob batteries on board. If your fob has just stopped working, there\'s a good chance it\'s just a battery replacement, which we can do at your location in minutes.' },
+      { q: 'How quickly can you reach Headingley LS6?', a: 'Typically 35–50 minutes from our Middleton base via the ring road and Otley Road. At night when roads are clear, we\'re often at the shorter end of that window.' },
+      { q: 'Can you help with a student\'s car lockout in Headingley?', a: 'Yes — student lockouts are one of our most common call types in LS6. We verify identity and ownership (student ID plus vehicle insurance is usually sufficient) and complete the job efficiently at the kerbside.' },
+      { q: 'What is the cost of car key replacement in Headingley?', a: 'Standard transponder keys from £80–£120. Smart and proximity keys from £150–£240. We quote a fixed price over the phone before we travel — no surprises.' },
+      { q: 'Do you work on VW Polo and Fiat 500 keys in Headingley?', a: 'Yes — VW Polo and Fiat 500 are among the most common vehicles in the Headingley student area. We carry key stock for both and typically complete these jobs in a single visit.' },
     ],
   },
 
@@ -239,18 +229,13 @@ export const locations: LocationData[] = [
       { name: 'Leeds City Centre', slug: 'leeds-city-centre', postcode: 'LS1' },
     ],
     faqs: [
-      {
-        q: 'Can you replace a smart key or proximity key in Chapel Allerton?',
-        a: 'Yes. Smart and proximity keys are common in LS7 and we carry programming equipment for most major brands. Call with your vehicle make, model, and year for a fixed quote.',
-      },
-      {
-        q: 'How do you find me if I\'m parked on a side street?',
-        a: 'We use a combination of what3words and standard navigation. Just give us the street name or a nearby landmark on Harrogate Road when you call, and we\'ll locate you without any fuss.',
-      },
-      {
-        q: 'Do you work on weekend evenings in Chapel Allerton?',
-        a: 'Yes — 24 hours a day, 7 days a week including weekends. Evening callouts are very common in the Chapel Allerton restaurant and bar area and we\'re always available.',
-      },
+      { q: 'Can you replace a smart key or proximity key in Chapel Allerton?', a: 'Yes. Smart and proximity keys are common in LS7 and we carry programming equipment for most major brands. Call with your vehicle make, model, and year for a fixed quote.' },
+      { q: 'How do you find me if I\'m parked on a side street?', a: 'We use a combination of what3words and standard navigation. Just give us the street name or a nearby landmark on Harrogate Road when you call, and we\'ll locate you without any fuss.' },
+      { q: 'Do you work on weekend evenings in Chapel Allerton?', a: 'Yes — 24 hours a day, 7 days a week including weekends. Evening callouts are very common in the Chapel Allerton restaurant and bar area and we\'re always available.' },
+      { q: 'How long does it take to reach Chapel Allerton LS7?', a: 'Typically 35–50 minutes from our Middleton base. We use the A61 or the ring road depending on traffic. We give you an accurate ETA on the call.' },
+      { q: 'What is your price for a lockout in Chapel Allerton?', a: 'Standard lockout from £60 in daytime hours, £70–£100 at night or weekends. Fixed price confirmed before we travel. No hidden extras.' },
+      { q: 'Can you deal with an Audi A3 or BMW 1 Series key in Chapel Allerton?', a: 'Yes. Premium vehicles are common in LS7 and we carry specialist equipment for Audi, BMW, and VW group keys. Call with your model and year for a fixed quote.' },
+      { q: 'Do you charge more for Chapel Allerton compared to South Leeds?', a: 'No. Our prices are the same regardless of postcode within our coverage area. The extra travel time to North Leeds is absorbed into our standard pricing.' },
     ],
   },
 
@@ -280,18 +265,13 @@ export const locations: LocationData[] = [
       { name: 'Headingley', slug: 'headingley-leeds', postcode: 'LS6' },
     ],
     faqs: [
-      {
-        q: 'Can you replace a BMW key fob in Roundhay?',
-        a: 'Yes. BMW key replacement is one of our specialisms. We carry BMW transponder keys and program them on-site using professional BMW-compatible diagnostics. Price depends on the model — call for a fixed quote.',
-      },
-      {
-        q: 'I\'m locked out near Roundhay Park — how quickly can you reach me?',
-        a: 'Roundhay Park is a regular callout for us. From our Middleton base it\'s typically 35–50 minutes. We\'ll ask for your precise location — car park entrance, road, or postcode — and head straight to you.',
-      },
-      {
-        q: 'Do you carry Mercedes key fobs in stock?',
-        a: 'We stock keys for the most common Mercedes models (C-Class, E-Class, A-Class) and can source others. Call with your model and year and we\'ll confirm stock and give you a price.',
-      },
+      { q: 'Can you replace a BMW key fob in Roundhay?', a: 'Yes. BMW key replacement is one of our specialisms. We carry BMW transponder keys and program them on-site using professional BMW-compatible diagnostics. Price depends on the model — call for a fixed quote.' },
+      { q: 'I\'m locked out near Roundhay Park — how quickly can you reach me?', a: 'Roundhay Park is a regular callout for us. From our Middleton base it\'s typically 35–50 minutes. We\'ll ask for your precise location — car park entrance, road, or postcode — and head straight to you.' },
+      { q: 'Do you carry Mercedes key fobs in stock?', a: 'We stock keys for the most common Mercedes models (C-Class, E-Class, A-Class) and can source others. Call with your model and year and we\'ll confirm stock and give you a price.' },
+      { q: 'How much does a premium car key replacement cost in Roundhay?', a: 'Premium brand keys (BMW, Audi, Mercedes, Range Rover) typically cost £150–£280 depending on model and key type. We quote a fixed price over the phone before travelling. No dealer detour needed.' },
+      { q: 'Can you replace a Range Rover or Jaguar key in Roundhay?', a: 'Yes. Range Rover and Jaguar keys require specialist programming — we carry the relevant equipment and have done these jobs in the Roundhay and North Leeds area many times. Call for a model-specific quote.' },
+      { q: 'Do you cover the residential streets around Wetherby Road and Street Lane?', a: 'Yes — the full LS8 postcode including Wetherby Road, Street Lane, Oakwood, and the streets around Roundhay Park are all covered. Just give us your address when you call.' },
+      { q: 'Are you available for a Roundhay lockout early in the morning?', a: 'Yes — 24/7. Early morning callouts before school drop-off are one of our most common Roundhay scenarios. We treat them with the same urgency as any other emergency.' },
     ],
   },
 
@@ -321,18 +301,13 @@ export const locations: LocationData[] = [
       { name: 'Garforth', slug: 'garforth-leeds', postcode: 'LS25' },
     ],
     faqs: [
-      {
-        q: 'Do you cover the Seacroft estate residential streets?',
-        a: 'Yes — the full LS14 postcode including the estate, Seacroft Avenue, and all residential roads. Give us your street name and we\'ll find you.',
-      },
-      {
-        q: 'Can you help with a van lockout near the Seacroft industrial area?',
-        a: 'Absolutely. Commercial vehicle lockouts at industrial units and distribution centres are a regular callout for us. We cover all major van makes — Ford Transit, Vauxhall Vivaro, Mercedes Sprinter, and others.',
-      },
-      {
-        q: 'What\'s your response time to Seacroft at night?',
-        a: 'At night the A64 is clear and we\'re typically 30–40 minutes to Seacroft. We\'re available 24/7 with no additional out-of-hours charge.',
-      },
+      { q: 'Do you cover the Seacroft estate residential streets?', a: 'Yes — the full LS14 postcode including the estate, Seacroft Avenue, and all residential roads. Give us your street name and we\'ll find you.' },
+      { q: 'Can you help with a van lockout near the Seacroft industrial area?', a: 'Absolutely. Commercial vehicle lockouts at industrial units and distribution centres are a regular callout for us. We cover all major van makes — Ford Transit, Vauxhall Vivaro, Mercedes Sprinter, and others.' },
+      { q: 'What\'s your response time to Seacroft at night?', a: 'At night the A64 is clear and we\'re typically 30–40 minutes to Seacroft. We\'re available 24/7 with no additional out-of-hours charge.' },
+      { q: 'How much does car key replacement cost in Seacroft LS14?', a: 'Standard transponder key replacement from £80–£120 for common vehicles like Ford Fiesta, Vauxhall Astra, and Corsa. Fixed price confirmed before we travel.' },
+      { q: 'Can you help a shift worker locked out very early in the morning in Seacroft?', a: 'Yes — early morning callouts for shift workers are one of our most common Seacroft call types. We operate 24 hours and treat 4am the same as 4pm. Call us any time.' },
+      { q: 'Can you cut a spare key for my car in Seacroft?', a: 'Yes. Spare key cutting in LS14 starts from £80. We come to your home or workplace — no need to travel anywhere. Book when you have your existing key and we\'ll sort a spare in 30–45 minutes.' },
+      { q: 'What do I need to show before you cut or programme a key?', a: 'We require proof of ownership — V5C logbook, valid insurance certificate, or a finance agreement showing your name and the vehicle registration. For lockouts, a driver\'s licence is usually sufficient.' },
     ],
   },
 
@@ -362,18 +337,13 @@ export const locations: LocationData[] = [
       { name: 'Seacroft', slug: 'seacroft-leeds', postcode: 'LS14' },
     ],
     faqs: [
-      {
-        q: 'How do you reach Garforth from your base in Middleton?',
-        a: 'We use the M621 and M1 or the A63 depending on traffic. Typical journey time is 35–50 minutes. We\'ll confirm your ETA when you call.',
-      },
-      {
-        q: 'Can you replace a Nissan Qashqai key in Garforth?',
-        a: 'The Nissan Qashqai is one of our most common key jobs. We carry Nissan transponder keys and program them using professional Nissan-compatible diagnostics. Give us a call for a fixed price.',
-      },
-      {
-        q: 'Do you cover Kippax and Micklefield as well as Garforth?',
-        a: 'Yes — Kippax, Micklefield, and Great Preston are all within our Garforth/LS25 coverage zone. Response time from Middleton is similar — typically 40–55 minutes.',
-      },
+      { q: 'How do you reach Garforth from your base in Middleton?', a: 'We use the M621 and M1 or the A63 depending on traffic. Typical journey time is 40–55 minutes. We\'ll confirm your ETA when you call.' },
+      { q: 'Can you replace a Nissan Qashqai key in Garforth?', a: 'The Nissan Qashqai is one of our most common key jobs. We carry Nissan transponder keys and program them using professional Nissan-compatible diagnostics. Give us a call for a fixed price.' },
+      { q: 'Do you cover Kippax and Micklefield as well as Garforth?', a: 'Yes — Kippax, Micklefield, and Great Preston are all within our Garforth/LS25 coverage zone. Response time from Middleton is similar — typically 40–55 minutes.' },
+      { q: 'How much does a Kia Sportage key replacement cost in Garforth?', a: 'Kia Sportage key replacement is typically £110–£180 for a standard remote/transponder key, or £150–£230 for a smart key. We quote exactly over the phone after you give us the model year.' },
+      { q: 'Can you replace a car key at Garforth train station?', a: 'Yes. Garforth station car park is a regular callout location for us. Let us know your bay number or where your car is parked and we\'ll find you.' },
+      { q: 'Are you available in Garforth on a Sunday?', a: 'Yes — seven days a week, 24 hours. Sunday callouts are common in Garforth, particularly late afternoon when families return from days out and find they\'ve lost their keys.' },
+      { q: 'Do you provide a receipt for a car key job in Garforth?', a: 'Yes — a full VAT receipt is provided for every job. This is accepted by most insurers for key cover claims.' },
     ],
   },
 
@@ -403,14 +373,13 @@ export const locations: LocationData[] = [
       { name: 'Kippax', slug: 'kippax-leeds', postcode: 'LS25' },
     ],
     faqs: [
-      {
-        q: 'Can you come to the Crossgates Shopping Centre car park?',
-        a: 'Yes — we attend Crossgates Shopping Centre, the ASDA car park, and surrounding roads regularly. Let us know the car park name and your bay if you have one, and we\'ll find you.',
-      },
-      {
-        q: 'I\'m locked out near Crossgates station — how long will you be?',
-        a: 'Crossgates station area is typically 35–45 minutes from our Middleton base via the A64. We\'ll confirm your exact ETA when you call.',
-      },
+      { q: 'Can you come to the Crossgates Shopping Centre car park?', a: 'Yes — we attend Crossgates Shopping Centre, the ASDA car park, and surrounding roads regularly. Let us know the car park name and your bay if you have one, and we\'ll find you.' },
+      { q: 'I\'m locked out near Crossgates station — how long will you be?', a: 'Crossgates station area is typically 35–45 minutes from our Middleton base via the A64. We\'ll confirm your exact ETA when you call.' },
+      { q: 'How much does a lockout cost in Crossgates LS15?', a: 'Standard lockout from £60 daytime, £70–£100 evenings and weekends. Fixed price confirmed over the phone before we travel. No extras on arrival.' },
+      { q: 'Can you replace a Ford Focus or Renault Megane key in Crossgates?', a: 'Yes — these are two of our most common key jobs in LS15. We carry stock for both models and typically complete these in a single visit. Call for a fixed quote.' },
+      { q: 'Do you cover Austhorpe Road and the residential streets off York Road?', a: 'Yes — the full LS15 postcode including Austhorpe Road, Station Road, and the surrounding estates are all covered. Give us your street name when you call.' },
+      { q: 'Are you available in Crossgates overnight and at weekends?', a: 'Yes — 24 hours, 7 days a week. We treat every callout with the same urgency regardless of the time.' },
+      { q: 'Can you programme a key for a Hyundai Tucson in Crossgates?', a: 'Yes. Hyundai Tucson keys are a regular job for us. Standard transponder replacement costs £110–£170. Call us with the year and variant for an exact quote.' },
     ],
   },
 
@@ -440,14 +409,13 @@ export const locations: LocationData[] = [
       { name: 'Headingley', slug: 'headingley-leeds', postcode: 'LS6' },
     ],
     faqs: [
-      {
-        q: 'Can you reach me in Horsforth Town Centre?',
-        a: 'Yes — Town Street and the surrounding LS18 area are fully covered. Typical response time is 40–55 minutes from Middleton.',
-      },
-      {
-        q: 'Do you cover Rawdon and the areas near Leeds Bradford Airport?',
-        a: 'Yes. Rawdon, Yeadon, and the Leeds Bradford Airport area are all within our coverage. We specifically mention airport callouts — travellers returning to find key issues are a common scenario.',
-      },
+      { q: 'Can you reach me in Horsforth Town Centre?', a: 'Yes — Town Street and the surrounding LS18 area are fully covered. Typical response time is 40–55 minutes from Middleton.' },
+      { q: 'Do you cover Rawdon and the areas near Leeds Bradford Airport?', a: 'Yes. Rawdon, Yeadon, and the Leeds Bradford Airport area are all within our coverage. We specifically mention airport callouts — travellers returning to find key issues are a common scenario.' },
+      { q: 'How much does car key replacement cost in Horsforth LS18?', a: 'Standard transponder key from £80–£120. Smart key from £150–£240. Fixed price given over the phone before we travel. No call-out charge.' },
+      { q: 'Can you replace a Volvo XC40 or Skoda Octavia key in Horsforth?', a: 'Yes. Both are common in LS18 and we carry programming equipment for Volvo and Skoda (VW group) vehicles. Call with your model year for an exact quote.' },
+      { q: 'What payment do you accept for a Horsforth callout?', a: 'We accept cash, bank transfer, and all major debit and credit cards. Payment on completion. Full VAT receipt provided on request.' },
+      { q: 'Can you cut a spare key in Horsforth while I still have the original?', a: 'Yes — spare keys in LS18 start from £80. We come to your home or workplace, complete the cutting and programming in 30–45 minutes, and leave you with two fully working keys.' },
+      { q: 'Are you available in Horsforth on bank holidays?', a: 'Yes — 24/7 including all bank holidays and Christmas. Car key problems don\'t take days off and neither do we.' },
     ],
   },
 
@@ -477,14 +445,13 @@ export const locations: LocationData[] = [
       { name: 'Wortley', slug: 'wortley-leeds', postcode: 'LS12' },
     ],
     faqs: [
-      {
-        q: 'Do you cover Stanningley and Farsley as part of Pudsey?',
-        a: 'Yes — Stanningley, Farsley, Calverley, and Swinnow are all within our LS28 coverage area. Response time is the same as Pudsey town centre — 40–55 minutes.',
-      },
-      {
-        q: 'Can you reach me on the A647 or near the Pudsey retail park?',
-        a: 'Yes. The A647 is our main route in from South Leeds and we\'re familiar with Pudsey town centre and the retail areas. Just let us know your location and we\'ll find you.',
-      },
+      { q: 'Do you cover Stanningley and Farsley as part of Pudsey?', a: 'Yes — Stanningley, Farsley, Calverley, and Swinnow are all within our LS28 coverage area. Response time is the same as Pudsey town centre — 40–55 minutes.' },
+      { q: 'Can you reach me on the A647 or near the Pudsey retail park?', a: 'Yes. The A647 is our main route in from South Leeds and we\'re familiar with Pudsey town centre and the retail areas. Just let us know your location and we\'ll find you.' },
+      { q: 'How much does an emergency lockout cost in Pudsey?', a: 'Standard lockout from £60 in daytime hours, £70–£100 at night. Fixed price confirmed before we travel to you in LS28.' },
+      { q: 'Can you replace a Seat Ibiza or Peugeot 208 key in Pudsey?', a: 'Yes — these are common in the LS28 area. We carry key blanks and programming data for both. Call for a fixed price before we travel.' },
+      { q: 'Do you work in Pudsey overnight?', a: 'Yes — 24 hours a day, 7 days a week. Night-time callouts in Pudsey are common for shift workers on the M621 corridor. We respond the same way day or night.' },
+      { q: 'Can I get a spare key cut in Pudsey at the weekend?', a: 'Yes. We operate 7 days. Spare key jobs in LS28 can be booked any day — call us and we\'ll arrange a time that suits you. Takes 30–45 minutes at your home.' },
+      { q: 'Will you come to a residential address in Calverley or Swinnow?', a: 'Yes — all LS28 addresses including Calverley, Swinnow, and Stanningley are covered at the same response time and price.' },
     ],
   },
 
@@ -514,14 +481,13 @@ export const locations: LocationData[] = [
       { name: 'Leeds City Centre', slug: 'leeds-city-centre', postcode: 'LS1' },
     ],
     faqs: [
-      {
-        q: 'How far is Armley from your Middleton base?',
-        a: 'About 4–5 miles via the ring road or A643. We typically reach Armley in 30–45 minutes. Ring road traffic at peak times can add 5–10 minutes.',
-      },
-      {
-        q: 'Do you cover the Kirkstall area as well as Armley?',
-        a: 'Yes — Kirkstall falls within the LS5/LS12 boundary and is covered. We handle it with the same response time as Armley, roughly 35–50 minutes from Middleton.',
-      },
+      { q: 'How far is Armley from your Middleton base?', a: 'About 4–5 miles via the ring road or A643. We typically reach Armley in 30–45 minutes. Ring road traffic at peak times can add 5–10 minutes.' },
+      { q: 'Do you cover the Kirkstall area as well as Armley?', a: 'Yes — Kirkstall falls within the LS5/LS12 boundary and is covered. We handle it with the same response time as Armley, roughly 35–50 minutes from Middleton.' },
+      { q: 'How much does car key replacement cost in Armley LS12?', a: 'Standard transponder key from £80–£120 for common vehicles. Remote/flip keys from £110–£180. We quote a fixed price over the phone before we travel.' },
+      { q: 'Can you cut a spare key for a Ford Fiesta or Vauxhall Corsa in Armley?', a: 'Yes — Ford Fiesta and Vauxhall Corsa are among our most frequent jobs in LS12. We carry stock for both and can complete spare keys in a single 30–45 minute visit.' },
+      { q: 'Are you available for an Armley callout at night?', a: 'Yes — 24/7. Night-time callouts in Armley are common. The ring road is clear at night and we\'re often there faster than the quoted 30–45 minute window.' },
+      { q: 'Do you cover the Canal Road industrial units and Armley Road businesses?', a: 'Yes. Commercial vehicle callouts at industrial and business premises on Armley Road and the Canal Road corridor are part of our regular service. Van keys, lockouts, all covered.' },
+      { q: 'What\'s the process when I call for a lockout in Armley?', a: 'Call 07309 903243. Tell us your location, vehicle make and model. We confirm whether it\'s a lockout (entry only) or if you also need a key. We give you a fixed price, confirm ETA, and travel straight to you.' },
     ],
   },
 
@@ -551,10 +517,13 @@ export const locations: LocationData[] = [
       { name: 'Wortley', slug: 'wortley-leeds', postcode: 'LS12' },
     ],
     faqs: [
-      {
-        q: 'Can you come to the Bramley Shopping Centre or ASDA car park?',
-        a: 'Yes — car park lockouts at Bramley Shopping Centre and ASDA Broad Lane are both within our coverage. We attend car parks regularly and work efficiently from the kerbside.',
-      },
+      { q: 'Can you come to the Bramley Shopping Centre or ASDA car park?', a: 'Yes — car park lockouts at Bramley Shopping Centre and ASDA Broad Lane are both within our coverage. We attend car parks regularly and work efficiently from the kerbside.' },
+      { q: 'How quickly can you reach Bramley LS13?', a: 'Typically 35–50 minutes from our Middleton base via the A647 or ring road. At night we\'re often faster. We give a precise ETA on the call.' },
+      { q: 'What does a car lockout cost in Bramley?', a: 'Standard lockout from £60 in daytime hours, £70–£100 at night and weekends. Price confirmed over the phone before we travel.' },
+      { q: 'Can you replace a Ford Focus or Peugeot key in Bramley?', a: 'Yes. These are common in LS13. We carry key stock for both and can complete in a single visit. Call with your model and year for a fixed price.' },
+      { q: 'Do you cut spare keys in Bramley?', a: 'Yes — spare keys start from £80 in LS13. We come to your home or workplace and have both keys working in 30–45 minutes. Strongly recommended if you bought a second-hand car with one key.' },
+      { q: 'Can you help with a Citroen C1 or Peugeot 107 key in Bramley?', a: 'Yes. Both share the same key platform and are common in Bramley. We carry blanks and programme them on-site. Usually a very quick job.' },
+      { q: 'Are you available at night in Bramley?', a: 'Yes — 24 hours, 7 days a week. Evening and late-night callouts to Bramley are routine for us. Call any time.' },
     ],
   },
 
@@ -584,14 +553,13 @@ export const locations: LocationData[] = [
       { name: 'Armley', slug: 'armley-leeds', postcode: 'LS12' },
     ],
     faqs: [
-      {
-        q: 'Can you get to Holbeck Urban Village or the Leeds Dock area?',
-        a: 'Yes — Water Lane, Clarence Dock, and the Round Foundry area are all within our Holbeck coverage. We\'re typically 25–40 minutes from our Middleton base.',
-      },
-      {
-        q: 'Do you handle lockouts at commercial premises in Holbeck?',
-        a: 'Yes. Business lockouts at offices, co-working spaces, and business units are all part of our service. We work on all types of commercial vehicles and attend business premises as readily as residential.',
-      },
+      { q: 'Can you get to Holbeck Urban Village or the Leeds Dock area?', a: 'Yes — Water Lane, Clarence Dock, and the Round Foundry area are all within our Holbeck coverage. We\'re typically 25–40 minutes from our Middleton base.' },
+      { q: 'Do you handle lockouts at commercial premises in Holbeck?', a: 'Yes. Business lockouts at offices, co-working spaces, and business units are all part of our service. We work on all types of commercial vehicles and attend business premises as readily as residential.' },
+      { q: 'How much does a lockout cost in Holbeck LS11?', a: 'Standard car lockout from £60 daytime, £70–£100 at night. Commercial vehicle lockouts from £80. Fixed price agreed over the phone before we travel.' },
+      { q: 'Can you replace a key for a VW Up or Renault Zoe in Holbeck?', a: 'Yes. Both the VW Up and Renault Zoe (including the key card) are vehicles we programme regularly. Call with your model year for a fixed quote.' },
+      { q: 'Do you cover the Victorian terraces in Holbeck as well as the business area?', a: 'Yes — the full LS11 postcode including the residential terraces and the regeneration business zone are covered. Response time is the same for both.' },
+      { q: 'Can you work on a Mini or small city car in Holbeck?', a: 'Yes. Minis are particularly common in the Holbeck Urban Village area. We handle BMW Mini (all generations) key work including smart keys and programmed spares.' },
+      { q: 'I need a key replacement for a company van in Holbeck — can you help?', a: 'Yes. Commercial van key replacement in Holbeck is a routine callout. We cover Ford Transit, Mercedes Sprinter, VW Transporter, and all major van makes. Same-day service available.' },
     ],
   },
 
@@ -621,10 +589,13 @@ export const locations: LocationData[] = [
       { name: 'Bramley', slug: 'bramley-leeds', postcode: 'LS13' },
     ],
     faqs: [
-      {
-        q: 'How do you access Wortley from your base?',
-        a: 'We use the ring road or the A643 through Beeston and Holbeck. It\'s typically 30–45 minutes. At night, ring road access makes it faster — often under 30 minutes.',
-      },
+      { q: 'How do you access Wortley from your base?', a: 'We use the ring road or the A643 through Beeston and Holbeck. It\'s typically 30–45 minutes. At night, ring road access makes it faster — often under 30 minutes.' },
+      { q: 'How much does a car lockout cost in Wortley LS12?', a: 'Standard lockout from £60 daytime, £70–£100 at night and weekends. Fixed price confirmed before we travel to LS12.' },
+      { q: 'Can you replace a Ford Fiesta or Vauxhall Corsa key in Wortley?', a: 'Yes — these are the most common vehicles in the Wortley area. We carry key stock for both and complete most jobs in a single visit.' },
+      { q: 'Do you cover Lower Wortley Road and the LS12 residential streets?', a: 'Yes — Lower Wortley Road, Old Road, and all surrounding residential streets are within our coverage area. Give us your address when you call.' },
+      { q: 'Are you available overnight in Wortley?', a: 'Yes — 24/7. Overnight callouts are straightforward from our Middleton base via the ring road.' },
+      { q: 'Can I get a spare key cut in Wortley?', a: 'Yes. Spare keys start from £80. We come to your home — call us and we\'ll arrange a convenient time. Takes 30–45 minutes on-site.' },
+      { q: 'Do you cover the A58(M) and ring road area near Wortley?', a: 'Yes. The ring road and A58 corridor are well within our coverage. We attend roadside callouts in this area regularly.' },
     ],
   },
 
@@ -653,14 +624,13 @@ export const locations: LocationData[] = [
       { name: 'Horsforth', slug: 'horsforth-leeds', postcode: 'LS18' },
     ],
     faqs: [
-      {
-        q: 'Is Otley too far for you to cover?',
-        a: 'No — we cover Otley and all of LS21. It\'s 45–60 minutes from Middleton, and there\'s no extra charge for the distance. Fixed price quoted over the phone.',
-      },
-      {
-        q: 'Do you cover rural areas near Otley like Farnley Tyas or Pool-in-Wharfedale?',
-        a: 'Yes. We cover the LS21 postcode fully, including rural locations, farms, and countryside addresses. Just give us the nearest road name or a what3words location.',
-      },
+      { q: 'Is Otley too far for you to cover?', a: 'No — we cover Otley and all of LS21. It\'s 45–60 minutes from Middleton, and there\'s no extra charge for the distance. Fixed price quoted over the phone.' },
+      { q: 'Do you cover rural areas near Otley like Farnley Tyas or Pool-in-Wharfedale?', a: 'Yes. We cover the LS21 postcode fully, including rural locations, farms, and countryside addresses. Just give us the nearest road name or a what3words location.' },
+      { q: 'How much does car key replacement cost in Otley LS21?', a: 'Standard transponder key from £80–£120. Land Rover, Jaguar, and premium keys from £150–£280. Fixed price given over the phone before we travel — no extra charge for the distance.' },
+      { q: 'Can you replace a Land Rover Discovery key in Otley?', a: 'Yes. Land Rover keys require specialist programming equipment — we carry it and handle these regularly for rural and semi-rural areas like Otley and Wharfedale. Call for a model-specific price.' },
+      { q: 'Do you provide proof of work documents for an insurance claim in Otley?', a: 'Yes. We provide a full VAT receipt for every job. If your insurer needs a job report, we can provide one. Most key insurance policies accept this for a claim.' },
+      { q: 'Can you come to a farm or rural property near Otley?', a: 'Yes. Agricultural and rural callouts are a specialism for us in the Otley and Wharfedale area. Just give us a postcode or what3words location and we\'ll find you.' },
+      { q: 'Are you available in Otley over Christmas and bank holidays?', a: 'Yes — 24 hours a day, 365 days a year. We operate on Christmas Day, New Year, and all bank holidays.' },
     ],
   },
 
@@ -689,14 +659,13 @@ export const locations: LocationData[] = [
       { name: 'Otley', slug: 'otley-leeds', postcode: 'LS21' },
     ],
     faqs: [
-      {
-        q: 'Do you cover Rawdon and Menston near Guiseley?',
-        a: 'Yes — Rawdon, Menston, and Yeadon all fall within our Aireborough/LS20 coverage. Response time is similar to Guiseley — 45–60 minutes from Middleton.',
-      },
-      {
-        q: 'Can you help at Leeds Bradford Airport near Guiseley?',
-        a: 'Yes. The airport long-stay and short-stay car parks are all within our response area. We attend airport callouts regularly — travellers returning to find key or access issues.',
-      },
+      { q: 'Do you cover Rawdon and Menston near Guiseley?', a: 'Yes — Rawdon, Menston, and Yeadon all fall within our Aireborough/LS20 coverage. Response time is similar to Guiseley — 45–60 minutes from Middleton.' },
+      { q: 'Can you help at Leeds Bradford Airport near Guiseley?', a: 'Yes. The airport long-stay and short-stay car parks are all within our response area. We attend airport callouts regularly — travellers returning to find key or access issues.' },
+      { q: 'How much does a car key replacement cost in Guiseley LS20?', a: 'Standard transponder key from £80–£120. Smart keys from £150–£240. No extra charge for the distance to LS20. Fixed price quoted over the phone.' },
+      { q: 'Can you replace an Audi A1 or BMW 1 Series key in Guiseley?', a: 'Yes. Premium smaller cars are common in the Aireborough area. We carry specialist equipment for Audi and BMW keys. Call with your model and year for a precise quote.' },
+      { q: 'What should I do if I discover my keys are missing at Leeds Bradford Airport?', a: 'Call us immediately — ideally before you leave the terminal. If you\'re already at the car, tell us your terminal exit or car park bay and we\'ll plan to arrive as close to your exit time as possible.' },
+      { q: 'Do you work in Guiseley on weekends?', a: 'Yes — seven days a week, 24 hours. Saturday and Sunday callouts in Guiseley are common, particularly for families returning from trips via the A65.' },
+      { q: 'Can you cut a spare key for my Volvo V40 in Guiseley?', a: 'Yes. Spare Volvo keys start from around £130. We come to your home in LS20, cut and programme the spare in 30–45 minutes, and you leave with two working keys.' },
     ],
   },
 
@@ -726,14 +695,13 @@ export const locations: LocationData[] = [
       { name: 'Leeds City Centre', slug: 'leeds-city-centre', postcode: 'LS1' },
     ],
     faqs: [
-      {
-        q: 'How quickly can you reach Hunslet from Middleton?',
-        a: 'Hunslet is our nearest significant area — typically 10–20 minutes from our Middleton base via the A639 or through Belle Isle. We quote 20–30 minutes to be safe, but often beat that window.',
-      },
-      {
-        q: 'Do you cover the Hunslet Business Park and industrial areas?',
-        a: 'Yes — van lockouts and commercial vehicle key issues at the business park and distribution areas are regular callouts. We cover all commercial vehicles including Ford Transit, Mercedes Sprinter, and Vauxhall Vivaro.',
-      },
+      { q: 'How quickly can you reach Hunslet from Middleton?', a: 'Hunslet is our nearest significant area — typically 10–20 minutes from our Middleton base via the A639 or through Belle Isle. We quote 20–30 minutes to be safe, but often beat that window.' },
+      { q: 'Do you cover the Hunslet Business Park and industrial areas?', a: 'Yes — van lockouts and commercial vehicle key issues at the business park and distribution areas are regular callouts. We cover all commercial vehicles including Ford Transit, Mercedes Sprinter, and Vauxhall Vivaro.' },
+      { q: 'How much does a lockout cost in Hunslet LS10?', a: 'Standard lockout from £60 daytime, £70–£90 at night. Hunslet is one of our closest areas and there is no call-out premium. Fixed price confirmed before we travel.' },
+      { q: 'Can you replace a Ford Fiesta key in Hunslet quickly?', a: 'Yes — Ford Fiesta is our single most common key job in LS10. We carry stock and can usually complete in under 30 minutes of arriving at your location.' },
+      { q: 'Are you the nearest auto locksmith to Hunslet?', a: 'Yes. We are based in Middleton LS10, which is directly adjacent to Hunslet. No other MLA-approved auto locksmith in Leeds is closer to the LS10 postcode than we are.' },
+      { q: 'Can I get a spare key cut for my van at the Hunslet Business Park?', a: 'Yes. Commercial van spare keys can be cut and programmed at your unit or yard. Fleet visits (multiple vehicles) are also available — call to discuss.' },
+      { q: 'Do you provide VAT receipts for Hunslet jobs?', a: 'Yes — a full VAT receipt is provided for every job. Useful for expense claims if the vehicle is commercial or company-owned.' },
     ],
   },
 
@@ -762,14 +730,13 @@ export const locations: LocationData[] = [
       { name: 'Bramley', slug: 'bramley-leeds', postcode: 'LS13' },
     ],
     faqs: [
-      {
-        q: 'Can you meet me at Leeds Bradford Airport when I land?',
-        a: 'Yes. Call us when you\'re through customs or know your landing time and we\'ll aim to be at the car parks as you arrive. We cover both the short-stay and long-stay car parks at the airport.',
-      },
-      {
-        q: 'I left my keys at home before my flight — can you get into my car in the airport car park?',
-        a: 'Yes. If you have proof of ownership, we can gain non-destructive access to your vehicle in the car park and arrange a replacement key. Call us as soon as you realise.',
-      },
+      { q: 'Can you meet me at Leeds Bradford Airport when I land?', a: 'Yes. Call us when you\'re through customs or know your landing time and we\'ll aim to be at the car parks as you arrive. We cover both the short-stay and long-stay car parks at the airport.' },
+      { q: 'I left my keys at home before my flight — can you get into my car in the airport car park?', a: 'Yes. If you have proof of ownership, we can gain non-destructive access to your vehicle in the car park and arrange a replacement key. Call us as soon as you realise.' },
+      { q: 'How much does a lockout cost at Leeds Bradford Airport car park?', a: 'Standard lockout from £60–£80. If you also need a replacement key, total cost from £150. Fixed price confirmed before we travel. No parking surcharge for airport car parks.' },
+      { q: 'How long will you take to reach Yeadon LS19 or the airport?', a: 'Typically 45–60 minutes from Middleton via the A6120 ring road and A65. We\'ll give you an accurate ETA when you call and update you if anything changes.' },
+      { q: 'Can you replace a Toyota RAV4 or Nissan Qashqai key at the airport?', a: 'Yes — both are common in the Yeadon and airport area. We carry programming equipment for Toyota and Nissan on board and complete these in a single visit.' },
+      { q: 'My smart key fob is dead after a long flight — is that normal?', a: 'Yes — smart key batteries can drain if left in vibration-heavy environments like aircraft holds or long-stay car parks. Try a new CR2032 battery first; if that doesn\'t resolve it, we\'ll diagnose and fix it on-site.' },
+      { q: 'Do you cover the residential streets of Yeadon as well as the airport area?', a: 'Yes — the full LS19 postcode including Henshaw Lane, High Street, and all residential roads in Yeadon are covered. Same response time and pricing.' },
     ],
   },
 
@@ -798,10 +765,13 @@ export const locations: LocationData[] = [
       { name: 'Crossgates', slug: 'crossgates-leeds', postcode: 'LS15' },
     ],
     faqs: [
-      {
-        q: 'Do you cover Allerton Bywater and Micklefield near Kippax?',
-        a: 'Yes — Allerton Bywater, Micklefield, and Ledston are all in our east LS25 coverage area alongside Kippax. Same response time — 40–55 minutes.',
-      },
+      { q: 'Do you cover Allerton Bywater and Micklefield near Kippax?', a: 'Yes — Allerton Bywater, Micklefield, and Ledston are all in our east LS25 coverage area alongside Kippax. Same response time — 40–55 minutes.' },
+      { q: 'How quickly can you reach Kippax LS25?', a: 'Typically 40–55 minutes via the M1 at junction 44 or the A63. We give an accurate ETA when you call. Overnight response via the motorway is often at the faster end of the window.' },
+      { q: 'How much does car key replacement cost in Kippax?', a: 'Standard transponder key from £80–£120 for common vehicles. Remote keys from £110–£180. Fixed price confirmed over the phone before we travel.' },
+      { q: 'Can you replace a Ford Focus or Vauxhall Astra key in Kippax?', a: 'Yes — these are the most common vehicles in the Kippax area. We carry stock for both and can complete in a single visit without needing to order parts.' },
+      { q: 'Are you available overnight in Kippax?', a: 'Yes — 24/7. The M1 route makes overnight access to Kippax predictable. We give the same service at 2am as at 2pm.' },
+      { q: 'Do I need to tow my car to a dealer for key programming?', a: 'No. We come to you in Kippax with professional diagnostic equipment and programme the key on-site at your location. No towing, no dealer wait, same day.' },
+      { q: 'Can you cut a spare key for my car in Kippax?', a: 'Yes. Spare keys start from £80. We come to your home or workplace — call us and we\'ll arrange to come the same day in most cases.' },
     ],
   },
 
@@ -830,18 +800,13 @@ export const locations: LocationData[] = [
       { name: 'Crossgates', slug: 'crossgates-leeds', postcode: 'LS15' },
     ],
     faqs: [
-      {
-        q: 'Can you attend at Wetherby Racecourse or the A1 services?',
-        a: 'Yes — Wetherby Racecourse, the A1(M) services, and all locations within the LS22 postcode are covered. Response time is 45–60 minutes. No extra charge for distance.',
-      },
-      {
-        q: 'Do you cover Boston Spa and Collingham near Wetherby?',
-        a: 'Yes — Boston Spa, Collingham, and Harewood are all within our Wetherby coverage area. Same response window — 45–60 minutes from Middleton.',
-      },
-      {
-        q: 'Can you replace a Jaguar or BMW key in Wetherby?',
-        a: 'Yes. Premium vehicle keys require specialist programming equipment and we carry it. Jaguar, BMW, and Mercedes keys are all within our capability — call for a fixed price quote.',
-      },
+      { q: 'Can you attend at Wetherby Racecourse or the A1 services?', a: 'Yes — Wetherby Racecourse, the A1(M) services, and all locations within the LS22 postcode are covered. Response time is 45–60 minutes. No extra charge for distance.' },
+      { q: 'Do you cover Boston Spa and Collingham near Wetherby?', a: 'Yes — Boston Spa, Collingham, and Harewood are all within our Wetherby coverage area. Same response window — 45–60 minutes from Middleton.' },
+      { q: 'Can you replace a Jaguar or BMW key in Wetherby?', a: 'Yes. Premium vehicle keys require specialist programming equipment and we carry it. Jaguar, BMW, and Mercedes keys are all within our capability — call for a fixed price quote.' },
+      { q: 'How much does a Lexus or Jaguar key replacement cost in Wetherby?', a: 'Premium executive car keys typically cost £160–£280 depending on model and key type. We quote exactly over the phone before we travel. No extra charge for Wetherby distance versus South Leeds pricing.' },
+      { q: 'I\'m stranded on the A1(M) near Wetherby — can you help?', a: 'Yes. Move to a safe location away from traffic (lay-by, services, junction slip road) and call us. We attend A1 corridor callouts regularly. Give us your junction number and direction of travel and we\'ll come to you.' },
+      { q: 'Do you cover rural addresses and farms near Wetherby?', a: 'Yes — the LS22 postcode includes rural addresses around Harewood, Kirkby Overblow, and the Wharfe valley. Give us a postcode or what3words location and we\'ll find you.' },
+      { q: 'Are you available on race days at Wetherby Racecourse?', a: 'Yes. We attend race day callouts regularly — both in the racecourse car parks and in the surrounding residential streets used for overflow parking. Response time from Middleton is 45–60 minutes.' },
     ],
   },
 ]

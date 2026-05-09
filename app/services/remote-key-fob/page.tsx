@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CTA from '@/components/CTA'
+import { faqSchema as buildFaqSchema } from '@/lib/schema'
 
 export const revalidate = false
 
@@ -11,9 +12,24 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://carkeysleeds.co.uk/services/remote-key-fob' },
 }
 
+const fobFaqs = [
+  { q: 'Why has my key fob suddenly stopped working?', a: 'The most common cause is a flat battery — key fob batteries (usually CR2032 or CR2025) typically last 1–3 years. Other causes include: water damage to the circuit board, a broken antenna inside the fob housing, the fob losing sync with the car\'s receiver, or a fault with the receiver unit in the vehicle itself. We diagnose over the phone to narrow it down before coming out.' },
+  { q: 'Is it always worth trying a new battery first?', a: "Yes — always. A new battery takes 2 minutes and costs under £3 from any petrol station. If a new battery doesn't fix the issue, the problem is electronic (chip or circuit) and you'll need us. Tell us when you call whether you've already tried a battery change — it helps us diagnose faster." },
+  { q: 'Can you re-programme my existing fob without replacing it?', a: 'Yes, in many cases. If the fob has lost sync with your vehicle (sometimes happens after battery replacement or after a flat car battery), we can re-sync it on-site without replacing the fob itself. This is significantly cheaper than a full replacement. Call us and describe the symptoms — we\'ll advise whether a re-programme is likely to resolve it.' },
+  { q: 'The blade on my key still works but the remote buttons do nothing — what is this?', a: 'This is a classic fob-only fault. The physical transponder chip is still working (so the car starts), but the radio transmitter that controls central locking has failed. This could be a dead battery, a broken circuit, or a lost sync. We can diagnose and repair or replace just the remote element without touching the key blade.' },
+  { q: 'Can you programme an aftermarket or universal remote to my car?', a: 'For many vehicles — yes. Quality aftermarket remotes are available for most common makes and cost significantly less than OEM replacements. However, some vehicles require OEM-only remotes due to proprietary encryption. We carry stock of aftermarket remotes for the most common models and will advise whether an aftermarket option is available for your specific vehicle.' },
+  { q: 'My key fob range has shortened dramatically — it only works when I am very close. What causes this?', a: "Reduced range almost always indicates a failing battery. The transmitter still works but at reduced signal strength. Try a fresh battery first. If range is still poor after a new battery, the antenna or transmitter circuit in the fob may be degrading and replacement is the fix." },
+  { q: "My car's keyless entry isn't detecting the smart key even when I'm standing next to it — what's wrong?", a: "Proximity key detection failures have several causes: a flat key fob battery, metal objects in your pocket or bag shielding the signal, interference from other devices, a failed antenna in the car door, or occasionally a fault with the car's BCM (body control module). We diagnose which element is at fault before recommending a fix." },
+  { q: 'Can you replace just the key fob casing if the electronics still work?', a: "Yes. If the buttons have worn through or the housing is cracked but the circuit board and chip are intact, we can transfer the electronics into a new housing. This is the cheapest repair option when the fault is purely cosmetic or mechanical (broken button spring, cracked case) rather than electronic." },
+]
+
+const fobFaqSchema = buildFaqSchema(fobFaqs)
+
 export default function RemoteKeyFobPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(fobFaqSchema) }} />
+
       <section className="bg-brand-navy py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <nav className="flex items-center gap-2 text-sm text-slate-400 mb-6" aria-label="Breadcrumb">
@@ -110,6 +126,21 @@ export default function RemoteKeyFobPage() {
             ))}
           </div>
           <p className="text-slate-500 text-xs mt-4">Fixed prices confirmed over the phone before we travel.</p>
+        </section>
+
+        {/* Page-specific FAQ */}
+        <section className="mb-10" aria-labelledby="fob-faq">
+          <h2 id="fob-faq" className="text-2xl sm:text-3xl font-extrabold text-brand-navy mb-6">
+            Remote Key Fob — Frequently Asked Questions
+          </h2>
+          <div className="space-y-5">
+            {fobFaqs.map((item) => (
+              <div key={item.q} className="p-5 bg-slate-50 border border-slate-200 rounded-xl">
+                <h3 className="font-bold text-brand-navy mb-2">{item.q}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
         <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">

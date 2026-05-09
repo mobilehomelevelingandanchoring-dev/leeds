@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import CTA from '@/components/CTA'
 import Reviews from '@/components/Reviews'
-import { locationSchema, breadcrumbSchema } from '@/lib/schema'
+import { locationSchema, breadcrumbSchema, faqSchema } from '@/lib/schema'
 
 export const revalidate = false
 
@@ -32,11 +32,24 @@ const crumbSchema = breadcrumbSchema([
   { name: 'Beeston Leeds', item: PAGE_URL },
 ])
 
+const beestonFaqs = [
+  { q: 'How fast can you reach Beeston LS11?', a: "Beeston is one of our fastest response areas — typically 25–35 minutes from our Middleton base via the A653 Dewsbury Road. At night or in quiet periods, we're often there in under 25 minutes. We'll give you a precise ETA when you call." },
+  { q: 'Do you cover all parts of Beeston, including Beeston Hill and Cross Flatts?', a: "Yes — we cover the full LS11 postcode, including Beeston Hill, the streets around Cross Flatts Park, Town Street, Beeston Road, Holbeck, and the Dewsbury Road corridor. Give us your street name and we'll find you." },
+  { q: 'How much does car key replacement cost in Beeston?', a: "Prices start from £80 for a standard transponder key on common vehicles. Smart keys and proximity keys typically cost £150–£240. We quote a fixed price over the phone before travelling — no surprises on arrival." },
+  { q: 'Can you help with a car lockout in Beeston at night?', a: "Yes — we operate 24 hours a day, 7 days a week including nights, weekends, and bank holidays. Beeston is one of our busiest overnight areas given its proximity to our Middleton base. Call any time." },
+  { q: 'What car makes do you cover most often in Beeston?', a: "Ford Fiesta, VW Polo, Vauxhall Corsa, and Renault Clio are the most common vehicles we work on in LS11. We carry key stock for all of these, so jobs in Beeston are typically completed in a single visit without ordering parts." },
+  { q: 'Do you charge a call-out fee for Beeston?', a: "No separate call-out fee. The price quoted over the phone includes travel to your Beeston location, the key cutting, and the programming. Nothing is added on arrival." },
+  { q: 'Can you replace a car key for a vehicle I bought second-hand that only came with one key?', a: "Yes, and we strongly recommend it. Getting a spare cut while you still have the original starts from £80. If you lose the only key later, the cost increases to £150–£280 because we have to work from the vehicle directly. Call us — we cover Beeston and can often come the same day." },
+]
+
+const beestonFaqSchema = faqSchema(beestonFaqs)
+
 export default function BeestonLeedsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(beestonFaqSchema) }} />
 
       <section className="bg-brand-navy py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
@@ -113,6 +126,20 @@ export default function BeestonLeedsPage() {
                 <h3 className="font-bold text-brand-navy mb-1.5">{s.title}</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">{s.desc}</p>
               </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-10" aria-labelledby="beeston-faq">
+          <h2 id="beeston-faq" className="text-2xl sm:text-3xl font-extrabold text-brand-navy mb-6">
+            Questions from Beeston Customers
+          </h2>
+          <div className="space-y-5">
+            {beestonFaqs.map((item) => (
+              <div key={item.q} className="p-5 bg-slate-50 border border-slate-200 rounded-xl">
+                <h3 className="font-bold text-brand-navy mb-2">{item.q}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{item.a}</p>
+              </div>
             ))}
           </div>
         </section>
