@@ -3,6 +3,9 @@ import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 import CTA from '@/components/CTA'
 import Reviews from '@/components/Reviews'
+import { serviceSchema, breadcrumbSchema, howToSchema, speakableSchema } from '@/lib/schema'
+
+export const revalidate = false
 
 export const metadata: Metadata = {
   title: 'Car Key Replacement Leeds | All Makes & Models | Same Day',
@@ -45,44 +48,37 @@ const process = [
   },
 ]
 
-const serviceSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Car Key Replacement Leeds',
-  description:
-    'Mobile car key replacement service in Leeds. We cut and programme replacement keys for all makes and models on-site at your location. Same-day service available.',
-  provider: {
-    '@type': 'LocksmithBusiness',
-    name: 'Car Keys Leeds',
-    url: 'https://carkeysleeds.co.uk',
-    telephone: '+447940757717',
-    areaServed: { '@type': 'City', name: 'Leeds', addressCountry: 'GB' },
-  },
-  areaServed: { '@type': 'City', name: 'Leeds' },
-  offers: {
-    '@type': 'Offer',
-    priceRange: '£80 - £280',
-    priceCurrency: 'GBP',
-    availability: 'https://schema.org/InStock',
-  },
-  serviceType: 'Car Key Replacement',
-}
+const PAGE_URL = 'https://carkeysleeds.co.uk/services/car-key-replacement'
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://carkeysleeds.co.uk' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://carkeysleeds.co.uk/services' },
-    { '@type': 'ListItem', position: 3, name: 'Car Key Replacement Leeds', item: 'https://carkeysleeds.co.uk/services/car-key-replacement' },
-  ],
-}
+const svcSchema = serviceSchema({
+  name: 'Car Key Replacement Leeds',
+  url: PAGE_URL,
+  description: 'Mobile car key replacement in Leeds. We cut and programme replacement keys for all makes and models on-site. Same-day service available 24/7.',
+  priceRange: '£80 – £280',
+  serviceType: 'Car Key Replacement',
+})
+
+const crumbSchema = breadcrumbSchema([
+  { name: 'Home', item: 'https://carkeysleeds.co.uk' },
+  { name: 'Services', item: 'https://carkeysleeds.co.uk/services' },
+  { name: 'Car Key Replacement Leeds', item: PAGE_URL },
+])
+
+const howTo = howToSchema({
+  name: 'How Car Key Replacement Works in Leeds',
+  description: 'We cut and programme a replacement car key at your location in Leeds — no towing, no dealer wait.',
+  steps: process.map(s => ({ name: s.title, text: s.description })),
+})
+
+const speakable = speakableSchema(PAGE_URL, ['h1', '#what-we-do', '#how-it-works'])
 
 export default function CarKeyReplacementPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(svcSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howTo) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakable) }} />
 
       {/* Page hero */}
       <section className="bg-brand-navy py-16 px-4 sm:px-6 lg:px-8">

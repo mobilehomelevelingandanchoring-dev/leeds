@@ -9,12 +9,20 @@ import FAQ from '@/components/FAQ'
 import CTA from '@/components/CTA'
 import Link from 'next/link'
 import Image from 'next/image'
+import { breadcrumbSchema, speakableSchema, webPageSchema } from '@/lib/schema'
+
+export const revalidate = false
 
 export const metadata: Metadata = {
   title: 'Car Keys Leeds | Mobile Auto Locksmith | 24/7 Emergency Service',
   description:
-    'Emergency mobile auto locksmith serving all of Leeds. Lost car keys, locked out, key programming. 30–60 min response. Fully insured. Call 07940 757717.',
+    'Emergency mobile auto locksmith serving all of Leeds. Lost car keys, locked out, key programming. 30–60 min response. MLA approved. Fully insured. Call 07940 757717.',
   alternates: { canonical: 'https://carkeysleeds.co.uk' },
+  openGraph: {
+    url: 'https://carkeysleeds.co.uk',
+    title: 'Car Keys Leeds | Mobile Auto Locksmith | 24/7',
+    description: "Leeds' MLA-approved mobile auto locksmith. 30–60 min response, all makes covered.",
+  },
 }
 
 const whyUsPoints = [
@@ -62,28 +70,31 @@ const whyUsPoints = [
 ]
 
 export default function HomePage() {
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://carkeysleeds.co.uk' },
-    ],
-  }
+  const breadcrumbs = breadcrumbSchema([
+    { name: 'Home', item: 'https://carkeysleeds.co.uk' },
+  ])
+
+  const speakable = speakableSchema('https://carkeysleeds.co.uk', [
+    'h1',
+    '#service-summary',
+    '#faq',
+  ])
+
+  const webPage = webPageSchema({
+    url: 'https://carkeysleeds.co.uk',
+    name: 'Car Keys Leeds — Mobile Auto Locksmith 24/7',
+    description: 'Emergency mobile auto locksmith serving all of Leeds. MLA approved. 30–60 min response.',
+  })
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakable) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPage) }} />
 
       <Hero />
       <TrustBar />
-
-      {/* Services section */}
       <Services />
-
-      {/* Accreditations */}
       <Accreditations />
 
       {/* Why Choose Us */}
@@ -95,7 +106,7 @@ export default function HomePage() {
               <h2 id="why-us-heading" className="text-3xl sm:text-4xl font-extrabold text-brand-navy mb-4">
                 Your Local Leeds Auto Locksmith — Not a National Call Centre
               </h2>
-              <p className="text-slate-600 leading-relaxed mb-6">
+              <p className="text-slate-600 leading-relaxed mb-6" id="service-summary">
                 When you call us, you speak directly to Mick — the locksmith who&apos;s coming out to you. No middlemen, no outsourcing to whoever is cheapest on the day. We&apos;re based in Middleton and have been serving Leeds motorists for years. You might have seen the van on the Middleton Park estate, parked up in Beeston, or on a callout in Morley town centre.
               </p>
               <p className="text-slate-600 leading-relaxed mb-8">
@@ -113,7 +124,6 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="space-y-5">
-              {/* Job photo — real Renault key work */}
               <div className="relative rounded-xl overflow-hidden shadow-md border border-slate-100">
                 <Image
                   src="/images/renault-key-job.webp"
@@ -121,6 +131,8 @@ export default function HomePage() {
                   width={600}
                   height={340}
                   className="w-full object-cover max-h-52"
+                  loading="lazy"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/80 to-transparent px-4 py-3">
                   <p className="text-white text-sm font-semibold">Real job — Renault key replacement, completed on-site in Leeds</p>
@@ -140,7 +152,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Mid-page CTA strip */}
+      {/* Mid-page CTA */}
       <div className="bg-amber-500 py-5 px-4">
         <div className="container-max flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-slate-900 font-bold text-lg text-center sm:text-left">
@@ -158,16 +170,9 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Areas */}
       <Areas />
-
-      {/* Reviews */}
       <Reviews />
-
-      {/* FAQ */}
       <FAQ />
-
-      {/* Final CTA */}
       <CTA />
     </>
   )

@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import CTA from '@/components/CTA'
 
+export const revalidate = false
+
 export const metadata: Metadata = {
   title: 'Spare Car Key Cutting Leeds | Programmed On-Site | From £80',
   description:

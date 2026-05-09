@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import CTA from '@/components/CTA'
 import Reviews from '@/components/Reviews'
+import { locationSchema, breadcrumbSchema } from '@/lib/schema'
+
+export const revalidate = false
 
 export const metadata: Metadata = {
   title: 'Auto Locksmith Beeston Leeds LS11 | Car Keys | Fast Response',
@@ -10,28 +13,30 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://carkeysleeds.co.uk/locations/beeston-leeds' },
 }
 
-const localBusinessSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocksmithBusiness',
-  name: 'Car Keys Leeds — Beeston',
-  description: 'Mobile auto locksmith serving Beeston, Leeds LS11 and surrounding areas. 25–35 minute response.',
-  url: 'https://carkeysleeds.co.uk/locations/beeston-leeds',
-  telephone: '+447940757717',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Beeston',
-    addressRegion: 'Leeds',
-    postalCode: 'LS11',
-    addressCountry: 'GB',
-  },
-  geo: { '@type': 'GeoCoordinates', latitude: '53.7735', longitude: '-1.5648' },
-  areaServed: { '@type': 'Place', name: 'Beeston, Leeds LS11' },
-}
+const PAGE_URL = 'https://carkeysleeds.co.uk/locations/beeston-leeds'
+
+const locSchema = locationSchema({
+  name: 'Beeston',
+  locality: 'Beeston',
+  url: PAGE_URL,
+  postcode: 'LS11',
+  lat: '53.7735',
+  lng: '-1.5648',
+  description: 'Mobile auto locksmith serving Beeston, Leeds LS11 and surrounding areas. 25–35 minute response from our Middleton base.',
+  areaNames: ['Beeston LS11', 'Holbeck LS11', 'Middleton LS10', 'Morley LS27'],
+})
+
+const crumbSchema = breadcrumbSchema([
+  { name: 'Home', item: 'https://carkeysleeds.co.uk' },
+  { name: 'Locations', item: 'https://carkeysleeds.co.uk/locations' },
+  { name: 'Beeston Leeds', item: PAGE_URL },
+])
 
 export default function BeestonLeedsPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbSchema) }} />
 
       <section className="bg-brand-navy py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">

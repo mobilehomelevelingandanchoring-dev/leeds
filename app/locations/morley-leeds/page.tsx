@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CTA from '@/components/CTA'
+import { locationSchema, breadcrumbSchema } from '@/lib/schema'
+
+export const revalidate = false
 
 export const metadata: Metadata = {
   title: 'Auto Locksmith Morley Leeds LS27 | Car Key Replacement | 24/7',
@@ -9,28 +12,30 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://carkeysleeds.co.uk/locations/morley-leeds' },
 }
 
-const localBusinessSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocksmithBusiness',
-  name: 'Car Keys Leeds — Morley',
-  description: 'Mobile auto locksmith serving Morley, Leeds LS27. 25–40 minute response from Middleton base.',
-  url: 'https://carkeysleeds.co.uk/locations/morley-leeds',
-  telephone: '+447940757717',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Morley',
-    addressRegion: 'Leeds',
-    postalCode: 'LS27',
-    addressCountry: 'GB',
-  },
-  geo: { '@type': 'GeoCoordinates', latitude: '53.7437', longitude: '-1.5998' },
-  areaServed: { '@type': 'Place', name: 'Morley, Leeds LS27' },
-}
+const PAGE_URL = 'https://carkeysleeds.co.uk/locations/morley-leeds'
+
+const locSchema = locationSchema({
+  name: 'Morley',
+  locality: 'Morley',
+  url: PAGE_URL,
+  postcode: 'LS27',
+  lat: '53.7437',
+  lng: '-1.5998',
+  description: 'Mobile auto locksmith serving Morley, Leeds LS27. 25–40 minute response from our Middleton base.',
+  areaNames: ['Morley LS27', 'Churwell LS27', 'Gildersome LS27', 'Tingley LS27', 'Rothwell LS26'],
+})
+
+const crumbSchema = breadcrumbSchema([
+  { name: 'Home', item: 'https://carkeysleeds.co.uk' },
+  { name: 'Locations', item: 'https://carkeysleeds.co.uk/locations' },
+  { name: 'Morley Leeds', item: PAGE_URL },
+])
 
 export default function MorleyLeedsPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbSchema) }} />
 
       <section className="bg-brand-navy py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">

@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CTA from '@/components/CTA'
+import { locationSchema, breadcrumbSchema } from '@/lib/schema'
+
+export const revalidate = false
 
 export const metadata: Metadata = {
   title: 'Auto Locksmith Rothwell Leeds LS26 | Car Keys | 25–40 Min',
@@ -9,28 +12,30 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://carkeysleeds.co.uk/locations/rothwell-leeds' },
 }
 
-const localBusinessSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocksmithBusiness',
-  name: 'Car Keys Leeds — Rothwell',
-  description: 'Mobile auto locksmith serving Rothwell, Leeds LS26. 25–40 minute response.',
-  url: 'https://carkeysleeds.co.uk/locations/rothwell-leeds',
-  telephone: '+447940757717',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Rothwell',
-    addressRegion: 'Leeds',
-    postalCode: 'LS26',
-    addressCountry: 'GB',
-  },
-  geo: { '@type': 'GeoCoordinates', latitude: '53.7496', longitude: '-1.4875' },
-  areaServed: { '@type': 'Place', name: 'Rothwell, Leeds LS26' },
-}
+const PAGE_URL = 'https://carkeysleeds.co.uk/locations/rothwell-leeds'
+
+const locSchema = locationSchema({
+  name: 'Rothwell',
+  locality: 'Rothwell',
+  url: PAGE_URL,
+  postcode: 'LS26',
+  lat: '53.7496',
+  lng: '-1.4875',
+  description: 'Mobile auto locksmith serving Rothwell, Leeds LS26 and surrounding areas. 25–40 minute response.',
+  areaNames: ['Rothwell LS26', 'Woodlesford LS26', 'Oulton LS26', 'Middleton LS10', 'Morley LS27'],
+})
+
+const crumbSchema = breadcrumbSchema([
+  { name: 'Home', item: 'https://carkeysleeds.co.uk' },
+  { name: 'Locations', item: 'https://carkeysleeds.co.uk/locations' },
+  { name: 'Rothwell Leeds', item: PAGE_URL },
+])
 
 export default function RothwellLeedsPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbSchema) }} />
 
       <section className="bg-brand-navy py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">

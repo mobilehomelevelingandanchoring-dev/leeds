@@ -3,6 +3,8 @@ import Link from 'next/link'
 import CTA from '@/components/CTA'
 import FAQ from '@/components/FAQ'
 
+export const revalidate = false
+
 export const metadata: Metadata = {
   title: 'Transponder Key Programming Leeds | All Makes | On-Site',
   description:

@@ -3,6 +3,9 @@ import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 import CTA from '@/components/CTA'
 import Reviews from '@/components/Reviews'
+import { locationSchema, breadcrumbSchema } from '@/lib/schema'
+
+export const revalidate = false
 
 export const metadata: Metadata = {
   title: 'Auto Locksmith Middleton Leeds LS10 | Car Keys | 20–35 Min Response',
@@ -15,53 +18,24 @@ export const metadata: Metadata = {
   },
 }
 
-const localBusinessSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocksmithBusiness',
-  name: 'Car Keys Leeds — Middleton',
-  description:
-    'Mobile auto locksmith based in Middleton, Leeds LS10. Fastest response in South Leeds — typically 20–35 minutes for Middleton, Beeston, Hunslet, and surrounding LS10/LS11 areas.',
-  url: 'https://carkeysleeds.co.uk/locations/middleton-leeds',
-  telephone: '+447940757717',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Middleton',
-    addressRegion: 'Leeds',
-    postalCode: 'LS10',
-    addressCountry: 'GB',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: '53.7638',
-    longitude: '-1.5438',
-  },
-  openingHoursSpecification: [
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-      opens: '00:00',
-      closes: '23:59',
-    },
-  ],
-  areaServed: [
-    { '@type': 'Place', name: 'Middleton, Leeds LS10' },
-    { '@type': 'Place', name: 'Belle Isle, Leeds LS10' },
-    { '@type': 'Place', name: 'Hunslet, Leeds LS10' },
-    { '@type': 'Place', name: 'Beeston, Leeds LS11' },
-    { '@type': 'Place', name: 'Morley, Leeds LS27' },
-    { '@type': 'Place', name: 'Rothwell, Leeds LS26' },
-  ],
-}
+const PAGE_URL = 'https://carkeysleeds.co.uk/locations/middleton-leeds'
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://carkeysleeds.co.uk' },
-    { '@type': 'ListItem', position: 2, name: 'Locations', item: 'https://carkeysleeds.co.uk/locations' },
-    { '@type': 'ListItem', position: 3, name: 'Middleton Leeds', item: 'https://carkeysleeds.co.uk/locations/middleton-leeds' },
-  ],
-}
+const localBusinessSchema = locationSchema({
+  name: 'Middleton',
+  locality: 'Middleton',
+  url: PAGE_URL,
+  postcode: 'LS10',
+  lat: '53.7638',
+  lng: '-1.5438',
+  description: 'Mobile auto locksmith based in Middleton, Leeds LS10. Fastest response in South Leeds — typically 20–35 minutes for Middleton, Beeston, Hunslet, and surrounding LS10/LS11 areas.',
+  areaNames: ['Middleton LS10', 'Belle Isle LS10', 'Hunslet LS10', 'Beeston LS11', 'Morley LS27', 'Rothwell LS26'],
+})
+
+const crumbSchema = breadcrumbSchema([
+  { name: 'Home', item: 'https://carkeysleeds.co.uk' },
+  { name: 'Locations', item: 'https://carkeysleeds.co.uk/locations' },
+  { name: 'Middleton Leeds', item: PAGE_URL },
+])
 
 const nearbyAreas = [
   { name: 'Belle Isle', postcode: 'LS10' },
@@ -78,7 +52,7 @@ export default function MiddletonLeedsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbSchema) }} />
 
       {/* Hero */}
       <section className="bg-brand-navy py-16 px-4 sm:px-6 lg:px-8">

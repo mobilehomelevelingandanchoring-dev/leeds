@@ -3,6 +3,8 @@ import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 import CTA from '@/components/CTA'
 
+export const revalidate = false
+
 export const metadata: Metadata = {
   title: 'Car Lockout Service Leeds | Emergency Vehicle Access | 24/7',
   description:
