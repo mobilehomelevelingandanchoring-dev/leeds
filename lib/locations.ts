@@ -45,7 +45,7 @@ export const locations: LocationData[] = [
     responseTime: '20–35 min',
     badge: 'Primary Base — Fastest Response in Leeds',
     metaTitle: 'Auto Locksmith Middleton Leeds LS10 | 20–35 Min Response',
-    metaDesc: 'Mobile auto locksmith in Middleton LS10. Car key replacement, lockouts & programming. Based here — 20–35 min response. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Middleton LS10. Car key replacement, lockouts & programming. Based here — 20–35 min response. Call 07309 903243.',
     h1: 'Auto Locksmith in Middleton Leeds',
     intro: 'Middleton is where we operate from — so LS10 callouts get the fastest response in the whole of Leeds.',
     paragraphs: [],
@@ -69,7 +69,7 @@ export const locations: LocationData[] = [
     responseTime: '25–35 min',
     badge: 'Serving Beeston LS11',
     metaTitle: 'Auto Locksmith Beeston Leeds LS11 | 25–35 Min Response',
-    metaDesc: 'Mobile auto locksmith in Beeston LS11. Car keys, lockouts, programming. 25–35 min response. MLA approved. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Beeston LS11. Car keys, lockouts, programming. 25–35 min response. MLA approved. Call 07309 903243.',
     h1: 'Auto Locksmith in Beeston Leeds',
     intro: 'Just a few minutes from our Middleton base, Beeston gets one of the fastest response times in South Leeds.',
     paragraphs: [],
@@ -92,7 +92,7 @@ export const locations: LocationData[] = [
     responseTime: '25–40 min',
     badge: 'Serving Morley LS27',
     metaTitle: 'Auto Locksmith Morley Leeds LS27 | Car Keys & Lockouts',
-    metaDesc: 'Mobile auto locksmith in Morley LS27. Lost car keys, lockouts, transponder programming. 25–40 min response. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Morley LS27. Lost car keys, lockouts, transponder programming. 25–40 min response. Call 07309 903243.',
     h1: 'Auto Locksmith in Morley Leeds',
     intro: 'Morley is one of our most regular callout areas — we know the town centre, the estates, and the roads in.',
     paragraphs: [],
@@ -115,7 +115,7 @@ export const locations: LocationData[] = [
     responseTime: '25–40 min',
     badge: 'Serving Rothwell LS26',
     metaTitle: 'Auto Locksmith Rothwell Leeds LS26 | Car Keys & Lockouts',
-    metaDesc: 'Mobile auto locksmith in Rothwell LS26. Car key replacement, lockouts, programming. 25–40 min response. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Rothwell LS26. Car key replacement, lockouts, programming. 25–40 min response. Call 07309 903243.',
     h1: 'Auto Locksmith in Rothwell Leeds',
     intro: 'Rothwell is a regular part of our South Leeds run — accessible from the M1 and the A61 corridor.',
     paragraphs: [],
@@ -141,7 +141,7 @@ export const locations: LocationData[] = [
     responseTime: '25–40 min',
     badge: 'Serving Leeds City Centre LS1',
     metaTitle: 'Auto Locksmith Leeds City Centre LS1 | 24/7 Car Keys',
-    metaDesc: 'Mobile auto locksmith covering Leeds city centre LS1. Car key replacement, lockouts & programming at NCP car parks, offices & roadside. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith covering Leeds city centre LS1. Car key replacement, lockouts & programming at NCP car parks, offices & roadside. Call 07309 903243.',
     h1: 'Auto Locksmith Leeds City Centre',
     intro: 'Whether you\'re locked out of your car in a Trinity Leeds car park or stranded outside your office on Park Row, we reach the city centre in 25–40 minutes, day or night.',
     paragraphs: [
@@ -182,7 +182,7 @@ export const locations: LocationData[] = [
     responseTime: '35–50 min',
     badge: 'Serving Headingley LS6',
     metaTitle: 'Auto Locksmith Headingley Leeds LS6 | Car Keys & Lockouts',
-    metaDesc: 'Mobile auto locksmith in Headingley LS6. Car key replacement, lockouts & programming. 35–50 min response, 24/7. MLA approved. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Headingley LS6. Car key replacement, lockouts & programming. 35–50 min response, 24/7. MLA approved. Call 07309 903243.',
     h1: 'Auto Locksmith in Headingley Leeds',
     intro: 'From Otley Road student digs to the Victorian terraces around Hyde Park, we provide full auto locksmith cover across Headingley LS6 — typically arriving in 35–50 minutes.',
     paragraphs: [
@@ -223,7 +223,7 @@ export const locations: LocationData[] = [
     responseTime: '35–50 min',
     badge: 'Serving Chapel Allerton LS7',
     metaTitle: 'Auto Locksmith Chapel Allerton Leeds LS7 | Car Keys',
-    metaDesc: 'Mobile auto locksmith in Chapel Allerton LS7, Leeds. Lost car keys, lockouts & programming. 35–50 min response, 24/7. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Chapel Allerton LS7, Leeds. Lost car keys, lockouts & programming. 35–50 min response, 24/7. Call 07309 903243.',
     h1: 'Auto Locksmith in Chapel Allerton Leeds',
     intro: 'Chapel Allerton\'s mix of young professionals, cafés, and on-street parking makes it one of the more common north Leeds areas for lockout callouts — we cover all of LS7 in 35–50 minutes.',
     paragraphs: [
@@ -264,7 +264,7 @@ export const locations: LocationData[] = [
     responseTime: '35–50 min',
     badge: 'Serving Roundhay LS8',
     metaTitle: 'Auto Locksmith Roundhay Leeds LS8 | BMW, Audi & All Makes',
-    metaDesc: 'Mobile auto locksmith in Roundhay LS8. Car key replacement for BMW, Audi, Mercedes & all makes. 35–50 min response. MLA approved. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Roundhay LS8. Car key replacement for BMW, Audi, Mercedes & all makes. 35–50 min response. MLA approved. Call 07309 903243.',
     h1: 'Auto Locksmith in Roundhay Leeds',
     intro: 'Roundhay is home to some of Leeds\'s most desirable residential streets — and to a high proportion of premium vehicles. We handle BMW, Audi, Mercedes, and Jaguar key work at the roadside in 35–50 minutes.',
     paragraphs: [
@@ -305,7 +305,7 @@ export const locations: LocationData[] = [
     responseTime: '35–50 min',
     badge: 'Serving Seacroft LS14',
     metaTitle: 'Auto Locksmith Seacroft Leeds LS14 | Car Keys & Lockouts',
-    metaDesc: 'Mobile auto locksmith in Seacroft LS14, Leeds. Lost car keys, lockouts & key programming. 35–50 min response, 24/7. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Seacroft LS14, Leeds. Lost car keys, lockouts & key programming. 35–50 min response, 24/7. Call 07309 903243.',
     h1: 'Auto Locksmith in Seacroft Leeds',
     intro: 'Seacroft is one of East Leeds\'s largest residential areas — we cover all of LS14 including the estate, York Road, and the Seacroft Green area, typically arriving in 35–50 minutes.',
     paragraphs: [
@@ -346,7 +346,7 @@ export const locations: LocationData[] = [
     responseTime: '40–55 min',
     badge: 'Serving Garforth LS25',
     metaTitle: 'Auto Locksmith Garforth Leeds LS25 | Car Keys & Lockouts',
-    metaDesc: 'Mobile auto locksmith in Garforth LS25. Lost car keys, lockouts & programming. 40–55 min response, 24/7. MLA approved. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Garforth LS25. Lost car keys, lockouts & programming. 40–55 min response, 24/7. MLA approved. Call 07309 903243.',
     h1: 'Auto Locksmith in Garforth Leeds',
     intro: 'Garforth is a busy commuter town east of Leeds — we cover all of LS25 including Kippax, Micklefield, and Great Preston, reaching you in 40–55 minutes.',
     paragraphs: [
@@ -387,7 +387,7 @@ export const locations: LocationData[] = [
     responseTime: '35–50 min',
     badge: 'Serving Crossgates LS15',
     metaTitle: 'Auto Locksmith Crossgates Leeds LS15 | Car Keys & Lockouts',
-    metaDesc: 'Mobile auto locksmith in Crossgates LS15, Leeds. Car key replacement, lockouts, programming. 35–50 min response 24/7. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Crossgates LS15, Leeds. Car key replacement, lockouts, programming. 35–50 min response 24/7. Call 07309 903243.',
     h1: 'Auto Locksmith in Crossgates Leeds',
     intro: 'Crossgates Shopping Centre, Crossgates station, and the surrounding LS15 streets are all covered — we\'re typically with you in 35–50 minutes.',
     paragraphs: [
@@ -424,7 +424,7 @@ export const locations: LocationData[] = [
     responseTime: '40–55 min',
     badge: 'Serving Horsforth LS18',
     metaTitle: 'Auto Locksmith Horsforth Leeds LS18 | Car Keys & Lockouts',
-    metaDesc: 'Mobile auto locksmith in Horsforth LS18. Lost car keys, lockouts & key programming. 40–55 min response 24/7. MLA approved. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Horsforth LS18. Lost car keys, lockouts & key programming. 40–55 min response 24/7. MLA approved. Call 07309 903243.',
     h1: 'Auto Locksmith in Horsforth Leeds',
     intro: 'Horsforth — one of North West Leeds\'s most popular commuter villages — gets full mobile auto locksmith coverage from us, arriving in 40–55 minutes across the whole LS18 area.',
     paragraphs: [
@@ -461,7 +461,7 @@ export const locations: LocationData[] = [
     responseTime: '40–55 min',
     badge: 'Serving Pudsey LS28',
     metaTitle: 'Auto Locksmith Pudsey Leeds LS28 | Car Keys & Lockouts',
-    metaDesc: 'Mobile auto locksmith in Pudsey LS28, between Leeds and Bradford. Lost car keys, lockouts, programming. 40–55 min response 24/7. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Pudsey LS28, between Leeds and Bradford. Lost car keys, lockouts, programming. 40–55 min response 24/7. Call 07309 903243.',
     h1: 'Auto Locksmith in Pudsey Leeds',
     intro: 'Pudsey sits between Leeds and Bradford on the A647 corridor — we cover all of LS28 including Stanningley, Farsley, and Calverley, arriving in 40–55 minutes.',
     paragraphs: [
@@ -498,7 +498,7 @@ export const locations: LocationData[] = [
     responseTime: '30–45 min',
     badge: 'Serving Armley LS12',
     metaTitle: 'Auto Locksmith Armley Leeds LS12 | Car Keys & Lockouts',
-    metaDesc: 'Mobile auto locksmith in Armley LS12. Lost car keys, lockouts & programming. 30–45 min response, 24/7. MLA approved. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Armley LS12. Lost car keys, lockouts & programming. 30–45 min response, 24/7. MLA approved. Call 07309 903243.',
     h1: 'Auto Locksmith in Armley Leeds',
     intro: 'Armley is inner West Leeds — just over 3 miles from our Middleton base via the A643 and ring road. We typically reach LS12 in 30–45 minutes.',
     paragraphs: [
@@ -535,7 +535,7 @@ export const locations: LocationData[] = [
     responseTime: '35–50 min',
     badge: 'Serving Bramley LS13',
     metaTitle: 'Auto Locksmith Bramley Leeds LS13 | Car Keys & Lockouts',
-    metaDesc: 'Mobile auto locksmith in Bramley LS13, West Leeds. Lost car keys, lockouts & programming. 35–50 min response 24/7. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Bramley LS13, West Leeds. Lost car keys, lockouts & programming. 35–50 min response 24/7. Call 07309 903243.',
     h1: 'Auto Locksmith in Bramley Leeds',
     intro: 'Bramley is a residential West Leeds area served by us at 35–50 minutes. We cover Town Street, Bramley Shopping Centre, and all LS13 postcodes.',
     paragraphs: [
@@ -568,7 +568,7 @@ export const locations: LocationData[] = [
     responseTime: '25–40 min',
     badge: 'Serving Holbeck LS11',
     metaTitle: 'Auto Locksmith Holbeck Leeds LS11 | Car Keys & Lockouts',
-    metaDesc: 'Mobile auto locksmith in Holbeck LS11. Close to Leeds city centre. Car key replacement, lockouts & programming. 25–40 min response. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Holbeck LS11. Close to Leeds city centre. Car key replacement, lockouts & programming. 25–40 min response. Call 07309 903243.',
     h1: 'Auto Locksmith in Holbeck Leeds',
     intro: 'Holbeck Urban Village sits on the South Bank of Leeds — just minutes from the city centre and a short drive from our Middleton base. We reach LS11 in 25–40 minutes.',
     paragraphs: [
@@ -605,7 +605,7 @@ export const locations: LocationData[] = [
     responseTime: '30–45 min',
     badge: 'Serving Wortley LS12',
     metaTitle: 'Auto Locksmith Wortley Leeds LS12 | Car Keys & Lockouts',
-    metaDesc: 'Mobile auto locksmith in Wortley LS12, West Leeds. Car key replacement, lockouts & programming. 30–45 min response 24/7. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Wortley LS12, West Leeds. Car key replacement, lockouts & programming. 30–45 min response 24/7. Call 07309 903243.',
     h1: 'Auto Locksmith in Wortley Leeds',
     intro: 'Wortley is a residential West Leeds neighbourhood within the LS12 postcode — reachable in 30–45 minutes via the ring road from our Middleton base.',
     paragraphs: [
@@ -638,7 +638,7 @@ export const locations: LocationData[] = [
     responseTime: '45–60 min',
     badge: 'Serving Otley LS21',
     metaTitle: 'Auto Locksmith Otley LS21 | Car Keys & Lockouts Wharfedale',
-    metaDesc: 'Mobile auto locksmith serving Otley LS21 and the Wharfedale area. Lost car keys, lockouts & programming. 45–60 min response 24/7. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith serving Otley LS21 and the Wharfedale area. Lost car keys, lockouts & programming. 45–60 min response 24/7. Call 07309 903243.',
     h1: 'Auto Locksmith in Otley',
     intro: 'Otley is a historic market town in Wharfedale, around 11 miles from our Middleton base — we cover the full LS21 area including the town centre, Pool, and Farnley Tyas, typically arriving in 45–60 minutes.',
     paragraphs: [
@@ -674,7 +674,7 @@ export const locations: LocationData[] = [
     responseTime: '45–60 min',
     badge: 'Serving Guiseley LS20',
     metaTitle: 'Auto Locksmith Guiseley Leeds LS20 | Car Keys & Lockouts',
-    metaDesc: 'Mobile auto locksmith in Guiseley LS20 and Aireborough area. Lost car keys, lockouts & programming. 45–60 min response 24/7. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Guiseley LS20 and Aireborough area. Lost car keys, lockouts & programming. 45–60 min response 24/7. Call 07309 903243.',
     h1: 'Auto Locksmith in Guiseley Leeds',
     intro: 'Guiseley is part of the Aireborough area between Leeds and Ilkley — we cover all of LS20 including Yeadon, Rawdon, and Menston, arriving in 45–60 minutes.',
     paragraphs: [
@@ -710,7 +710,7 @@ export const locations: LocationData[] = [
     responseTime: '20–30 min',
     badge: 'Serving Hunslet LS10 — Very Fast Response',
     metaTitle: 'Auto Locksmith Hunslet Leeds LS10 | 20–30 Min Response',
-    metaDesc: 'Mobile auto locksmith in Hunslet LS10. Car key replacement, lockouts & programming. 20–30 min response — close to our Middleton base. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Hunslet LS10. Car key replacement, lockouts & programming. 20–30 min response — close to our Middleton base. Call 07309 903243.',
     h1: 'Auto Locksmith in Hunslet Leeds',
     intro: 'Hunslet is part of the LS10 postcode and sits just minutes north of our Middleton base — giving it one of the fastest response times in all of Leeds at 20–30 minutes.',
     paragraphs: [
@@ -747,7 +747,7 @@ export const locations: LocationData[] = [
     responseTime: '45–60 min',
     badge: 'Serving Yeadon LS19 — Near Leeds Bradford Airport',
     metaTitle: 'Auto Locksmith Yeadon Leeds LS19 | Airport & Local Cover',
-    metaDesc: 'Mobile auto locksmith in Yeadon LS19, near Leeds Bradford Airport. Lost car keys, lockouts, programming. 45–60 min response 24/7. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Yeadon LS19, near Leeds Bradford Airport. Lost car keys, lockouts, programming. 45–60 min response 24/7. Call 07309 903243.',
     h1: 'Auto Locksmith in Yeadon Leeds',
     intro: 'Yeadon sits right next to Leeds Bradford Airport — we cover the full LS19 area including the airport car parks, and we\'re a frequent call for returning travellers dealing with car key problems.',
     paragraphs: [
@@ -783,7 +783,7 @@ export const locations: LocationData[] = [
     responseTime: '40–55 min',
     badge: 'Serving Kippax LS25',
     metaTitle: 'Auto Locksmith Kippax Leeds LS25 | Car Keys & Lockouts',
-    metaDesc: 'Mobile auto locksmith in Kippax LS25, East Leeds. Car key replacement, lockouts & programming. 40–55 min response 24/7. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Kippax LS25, East Leeds. Car key replacement, lockouts & programming. 40–55 min response 24/7. Call 07309 903243.',
     h1: 'Auto Locksmith in Kippax Leeds',
     intro: 'Kippax is a village in the east of the Leeds district, close to Garforth and the M1. We cover all of the LS25 postcode east of Garforth in 40–55 minutes.',
     paragraphs: [
@@ -815,7 +815,7 @@ export const locations: LocationData[] = [
     responseTime: '45–60 min',
     badge: 'Serving Wetherby LS22 & Harewood',
     metaTitle: 'Auto Locksmith Wetherby LS22 | Car Keys & Lockouts A1',
-    metaDesc: 'Mobile auto locksmith in Wetherby LS22. Lost car keys, lockouts & key programming. 45–60 min response. Serving A1 corridor & Harewood. Call 07940 757717.',
+    metaDesc: 'Mobile auto locksmith in Wetherby LS22. Lost car keys, lockouts & key programming. 45–60 min response. Serving A1 corridor & Harewood. Call 07309 903243.',
     h1: 'Auto Locksmith in Wetherby',
     intro: 'Wetherby is a market town on the A1(M) near the North Yorkshire border — we cover all of LS22 including Boston Spa, Collingham, and Harewood, reaching you in 45–60 minutes.',
     paragraphs: [

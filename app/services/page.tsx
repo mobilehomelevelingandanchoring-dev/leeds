@@ -5,7 +5,7 @@ import CTA from '@/components/CTA'
 export const metadata: Metadata = {
   title: 'Auto Locksmith Services Leeds | Car Keys & Lockouts | 24/7',
   description:
-    'Full range of mobile auto locksmith services in Leeds. Car key replacement, lockouts, transponder programming, spare keys, van keys. 30–60 min response. Call 07940 757717.',
+    'Full range of mobile auto locksmith services in Leeds. Car key replacement, lockouts, transponder programming, spare keys, van keys. 30–60 min response. Call 07309 903243.',
   alternates: { canonical: 'https://carkeysleeds.co.uk/services' },
 }
 
@@ -131,11 +131,11 @@ export default function ServicesPage() {
           <p className="text-slate-600 mb-6 max-w-xl mx-auto">
             Give us a call and describe the situation — we&apos;ll tell you exactly what&apos;s involved, whether we can help, and how much it will cost. Free advice, no obligation.
           </p>
-          <a href="tel:+447940757717" className="btn-emergency">
+          <a href="tel:+447309903243" className="btn-emergency">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
             </svg>
-            Call 07940 757717 — Free Advice
+            Call 07309 903243 — Free Advice
           </a>
         </div>
       </section>

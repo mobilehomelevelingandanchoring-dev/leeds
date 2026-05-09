@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
       <div className="prose prose-slate max-w-none space-y-6 text-slate-600 text-sm leading-relaxed">
         <section>
           <h2 className="text-xl font-bold text-brand-navy">Who We Are</h2>
-          <p>Car Keys Leeds is a mobile auto locksmith business operating in Leeds, West Yorkshire, UK. Our website is <strong>carkeysleeds.co.uk</strong>. You can contact us at info@carkeysleeds.co.uk or 07940 757717.</p>
+          <p>Car Keys Leeds is a mobile auto locksmith business operating in Leeds, West Yorkshire, UK. Our website is <strong>carkeysleeds.co.uk</strong>. You can contact us at info@carkeysleeds.co.uk or 07309 903243.</p>
         </section>
 
         <section>

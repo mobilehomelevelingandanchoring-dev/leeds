@@ -24,7 +24,7 @@ export default function manifest(): MetadataRoute.Manifest {
         name: 'Call Now',
         short_name: 'Call',
         description: 'Call Car Keys Leeds directly',
-        url: 'tel:+447940757717',
+        url: 'tel:+447309903243',
         icons: [{ src: '/images/logo.webp', sizes: '96x96' }],
       },
     ],

@@ -10,7 +10,7 @@ export const revalidate = false
 export const metadata: Metadata = {
   title: 'Car Key Replacement Leeds | All Makes & Models | Same Day',
   description:
-    'Lost your car keys in Leeds? We replace car keys for all makes and models — cut and programmed on-site, same day. No dealer wait. From £80. Call 07940 757717.',
+    'Lost your car keys in Leeds? We replace car keys for all makes and models — cut and programmed on-site, same day. No dealer wait. From £80. Call 07309 903243.',
   alternates: { canonical: 'https://carkeysleeds.co.uk/services/car-key-replacement' },
   openGraph: {
     title: 'Car Key Replacement Leeds | All Makes | Same Day',
@@ -29,7 +29,7 @@ const process = [
   {
     step: '1',
     title: 'Call Us',
-    description: "Phone us on 07940 757717. Tell us your vehicle make, model, and year, and where you are in Leeds. We'll confirm we can help and give you a fixed price straight away.",
+    description: "Phone us on 07309 903243. Tell us your vehicle make, model, and year, and where you are in Leeds. We'll confirm we can help and give you a fixed price straight away.",
   },
   {
     step: '2',
@@ -107,13 +107,13 @@ export default function CarKeyReplacementPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="tel:+447940757717"
+              href="tel:+447309903243"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-500 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-xl transition-all duration-200"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
               </svg>
-              Call 07940 757717
+              Call 07309 903243
             </a>
             <Link
               href="/services/car-lockout"

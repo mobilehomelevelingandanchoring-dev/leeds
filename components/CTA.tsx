@@ -1,5 +1,5 @@
-const PHONE = '07940 757717'
-const PHONE_HREF = 'tel:+447940757717'
+const PHONE = '07309 903243'
+const PHONE_HREF = 'tel:+447309903243'
 
 interface CTAProps {
   heading?: string

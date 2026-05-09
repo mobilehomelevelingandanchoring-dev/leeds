@@ -8,7 +8,7 @@ export const revalidate = false
 export const metadata: Metadata = {
   title: 'Auto Locksmith Rothwell Leeds LS26 | Car Keys | 25–40 Min',
   description:
-    'Mobile auto locksmith in Rothwell, Leeds LS26. Car key replacement, lockouts & key programming. 25–40 min response. All makes. Call 07940 757717.',
+    'Mobile auto locksmith in Rothwell, Leeds LS26. Car key replacement, lockouts & key programming. 25–40 min response. All makes. Call 07309 903243.',
   alternates: { canonical: 'https://carkeysleeds.co.uk/locations/rothwell-leeds' },
 }
 
@@ -57,11 +57,11 @@ export default function RothwellLeedsPage() {
           <p className="text-xl text-slate-300 mb-8 max-w-2xl leading-relaxed">
             Rothwell is a quick hop from our Middleton base via the A654. Whether you need a replacement car key or you&apos;re locked out in LS26, we respond 24 hours a day.
           </p>
-          <a href="tel:+447940757717" className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-500 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-xl transition-all duration-200">
+          <a href="tel:+447309903243" className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-500 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-xl transition-all duration-200">
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
             </svg>
-            Call 07940 757717
+            Call 07309 903243
           </a>
         </div>
       </section>

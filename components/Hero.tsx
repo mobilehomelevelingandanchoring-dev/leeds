@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-const PHONE = '07940 757717'
-const PHONE_HREF = 'tel:+447940757717'
+const PHONE = '07309 903243'
+const PHONE_HREF = 'tel:+447309903243'
 
 const trustBadges = [
   { icon: '⏱', text: '30–60 Min Response' },

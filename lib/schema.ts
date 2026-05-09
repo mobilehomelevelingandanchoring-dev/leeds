@@ -2,8 +2,8 @@
 // Google can merge them into a single Knowledge Graph node.
 
 export const SITE = 'https://carkeysleeds.co.uk'
-export const PHONE_E164 = '+447940757717'
-export const PHONE_DISPLAY = '07940 757717'
+export const PHONE_E164 = '+447309903243'
+export const PHONE_DISPLAY = '07309 903243'
 export const BUSINESS_NAME = 'Car Keys Leeds'
 export const BUSINESS_ALT = 'Motorkeys Auto Locksmiths'
 
