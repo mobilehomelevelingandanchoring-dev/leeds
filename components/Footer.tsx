@@ -150,6 +150,43 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Trusted Partners */}
+      <div className="border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <h3 className="text-white font-bold text-sm uppercase tracking-wider mb-4">Trusted Partner Network</h3>
+          <p className="text-xs text-slate-500 mb-4 max-w-2xl leading-relaxed">
+            We work alongside trusted mobile auto locksmith specialists across the North West and Yorkshire to ensure customers receive fast, professional car key services wherever they are.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="https://carkeysinstockport.co.uk/"
+              title="Car Keys Stockport – Mobile Car Key Replacement &amp; Auto Locksmith in Stockport"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2.5 bg-white/5 hover:bg-amber-500/10 border border-white/10 hover:border-amber-500/40 rounded-xl px-4 py-3 transition-all duration-200 group"
+              aria-label="Visit Car Keys Stockport – mobile car key replacement specialists serving Stockport and surrounding areas"
+            >
+              <span className="flex items-center justify-center w-7 h-7 rounded-full bg-amber-500/20 shrink-0" aria-hidden="true">
+                <svg className="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+                </svg>
+              </span>
+              <span className="flex flex-col">
+                <span className="text-white text-sm font-semibold group-hover:text-amber-400 transition-colors leading-tight">
+                  Car Keys Stockport
+                </span>
+                <span className="text-slate-500 text-xs leading-tight">
+                  Mobile Car Key Replacement Stockport
+                </span>
+              </span>
+              <svg className="w-3.5 h-3.5 text-slate-600 group-hover:text-amber-400 transition-colors ml-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
