@@ -60,6 +60,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  verification: {
+    google: 'sVlhBiEWgNi1n4wpdy5SXq214EsHyGNQUmn_DrMgX8k',
+  },
   manifest: '/manifest.webmanifest',
   icons: {
     icon: '/images/logo.webp',
